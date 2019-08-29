@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_supermercati"
+        android:icon="@drawable/ic_supermercati"
+        android:title="@string/title_supermercati" />
+
+    <item
+        android:id="@+id/navigation_offerte"
+        android:icon="@drawable/ic_offerte"
+        android:title="@string/title_offerte" />
+
+    <item
+        android:id="@+id/navigation_preferiti"
+        android:icon="@drawable/ic_preferiti"
+        android:title="@string/title_preferiti" />
+
+</menu>

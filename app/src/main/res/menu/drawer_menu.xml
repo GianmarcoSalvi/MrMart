@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single"
+            android:id="@+id/gruppo1">
+        <item
+            android:id="@+id/cronologia"
+            android:checked="false"
+            android:title="Cronologia ordini"
+            android:icon="@drawable/ic_history"/>
+
+        <item
+            android:id="@+id/notifiche"
+            android:checked="false"
+            android:title="Notifiche"
+            android:icon="@drawable/ic_notification"/>
+
+        <item
+            android:id="@+id/privacy"
+            android:checked="false"
+            android:title="Privacy e sicurezza"
+            android:icon="@drawable/ic_privacy"/>
+
+
+        <item
+            android:id="@+id/aiuto"
+            android:checked="false"
+            android:title="Aiuto"
+            android:icon="@drawable/ic_help"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+            android:id="@+id/gruppo2">
+        <item
+            android:id="@+id/profilo"
+            android:checked="false"
+            android:title="Profilo"
+            android:icon="@drawable/ic_profile"/>
+
+        <item
+            android:id="@+id/log_out"
+            android:checked="false"
+            android:title="Log Out"
+            android:icon="@drawable/ic_log_out"/>
+
+
+    </group>
+</menu>

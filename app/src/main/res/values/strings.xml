@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My True Application</string>
+
+    <string name="title_supermercati">Supermercati</string>
+    <string name="title_preferiti">Preferiti</string>
+    <string name="title_offerte">Offerte</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="carrello">0.0</string>
+
+
+</resources>
