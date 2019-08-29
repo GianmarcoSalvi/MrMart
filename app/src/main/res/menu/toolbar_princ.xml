@@ -12,10 +12,10 @@
 
     <item
         android:id="@+id/prezzo"
-        android:title="prezzo"
+        android:title="€ 0,00"
 
         android:actionLayout="@layout/cart_price"
-        app:showAsAction="always|withText"
+        app:showAsAction="always"
         />
 
 

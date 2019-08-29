@@ -57,19 +57,18 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_supermercati:
-                    mSearchView.setQueryHint("Supermercati");
-
+                    mSearchView.setQueryHint("Cerca supermercato");
                     getSupportActionBar().setTitle("Supermercati");
 
                     return true;
                 case R.id.navigation_offerte:
-                    mSearchView.setQueryHint("Offerte");
+                    mSearchView.setQueryHint("Cerca prodotto");
                     getSupportActionBar().setTitle("Offerte");
 
 
                     return true;
                 case R.id.navigation_preferiti:
-                    mSearchView.setQueryHint("Preferiti");
+                    mSearchView.setQueryHint("Cerca preferito");
                     getSupportActionBar().setTitle("Preferiti");
                     return true;
             }
@@ -79,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    private Button mButton = null;
+    //private Button mButton = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);*/
 
 
+        /*
         mButton = (Button) findViewById(R.id.button1);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,6 +115,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+        */
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
@@ -152,6 +156,6 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-    
+
 
 }
