@@ -16,6 +16,6 @@
     <string name="prezzoVino"> <strike>€7,99</strike></string>
     <string name="prezzoTenerone"> <strike>€2,99</strike></string>
     <string name="prezzoCani"> <strike>€14,99</strike></string>
-    <string name="prezzoMelanzana"> <strike>€0,99</strike></string>
+    <string name="prezzoMelanzana"> <strike>€0,99/kg</strike></string>
 
 </resources>
