@@ -22,16 +22,17 @@
             android:id="@+id/toolbar"
             android:background="@color/colorPrimary"
             android:elevation="4dp"
-            android:layout_weight="0.5">
+            android:layout_weight="0.7">
 
 
 
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/parte1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
+                android:weightSum="10"
+                android:orientation="horizontal"
                 android:background="@color/colorPrimary">
 
 
@@ -40,28 +41,36 @@
 
                 <SearchView
                     android:id="@+id/ricerca"
-                    android:layout_width="300dp"
-                    android:layout_height="28dp"
-                    android:layout_below="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
                     android:iconifiedByDefault="false"
                     android:queryHint="Cerca prodotto"
                     android:background="@drawable/round_searchbar"
                     />
 
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
 
 
                 <ImageButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_filters"
+                    android:layout_margin="16dp"
                     android:background="@drawable/round_searchbar"
-                    android:layout_marginLeft="340dp"/>
+                  />
 
 
 
 
 
-            </RelativeLayout>
+            </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 
 
@@ -75,7 +84,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="9.5"
+                    android:layout_weight="9.3"
                     android:orientation="vertical">
 
 
