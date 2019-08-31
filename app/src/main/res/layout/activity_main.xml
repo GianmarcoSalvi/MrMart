@@ -6,7 +6,10 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
+
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +23,9 @@
             android:id="@+id/toolbar"
             android:background="@color/colorPrimary"
             android:elevation="4dp"
-            android:layout_weight="0.7">
+            android:layout_weight="0.7"
+            android:focusableInTouchMode="true"
+            >
 
             <LinearLayout
                 android:id="@+id/parte1"
@@ -33,7 +38,7 @@
                 <SearchView
                     android:id="@+id/ricerca"
                     android:layout_width="0dp"
-                    android:layout_weight="7"
+                    android:layout_weight="8"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:iconifiedByDefault="false"
@@ -44,11 +49,11 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_weight="0.5"/>
 
                 <ImageButton
                     android:layout_width="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1.5"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_filters"
                     android:layout_margin="16dp"
@@ -59,33 +64,44 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-                <LinearLayout
+        <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="9.3"
+                    android:layout_weight="8.5"
                     android:orientation="vertical">
                     <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:fillViewport="true">
-                        <LinearLayout
+
+
+
+                        <TableLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-                        <GridLayout
-                                android:alignmentMode="alignMargins"
-                                android:layout_height="match_parent"
-                                android:layout_width="match_parent"
-                                android:columnOrderPreserved="false"
-                                android:columnCount="2"
+                            android:layout_height="match_parent">
+                        <!--
+                            <GridLayout
                                 android:rowCount="3"
+                                android:columnCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:padding="14dp">
+
+                                -->
+
+
+                            <TableRow
+                                android:layout_height="200dp"
+                                android:weightSum="10">
+
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_columnWeight="1"
-                                    android:layout_rowWeight="1"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
+
                                     app:cardElevation="8dp"
                                     app:cardCornerRadius="8dp"
                                     android:layout_margin="10dp">
@@ -164,9 +180,9 @@
                                 </androidx.cardview.widget.CardView>
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_columnWeight="1"
-                                    android:layout_rowWeight="1"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
+
                                     app:cardElevation="8dp"
                                     app:cardCornerRadius="8dp"
                                     android:layout_margin="10dp">
@@ -243,11 +259,18 @@
 
 
                                 </androidx.cardview.widget.CardView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_height="200dp"
+                                android:weightSum="10">
+
+
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_columnWeight="1"
-                                    android:layout_rowWeight="1"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
+
                                     app:cardElevation="8dp"
                                     app:cardCornerRadius="8dp"
                                     android:layout_margin="10dp">
@@ -326,9 +349,8 @@
                                 </androidx.cardview.widget.CardView>
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_columnWeight="1"
-                                    android:layout_rowWeight="1"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
                                     app:cardElevation="8dp"
                                     app:cardCornerRadius="8dp"
                                     android:layout_margin="10dp">
@@ -405,11 +427,184 @@
 
 
                                 </androidx.cardview.widget.CardView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_height="200dp"
+                                android:weightSum="10">
+
+
+                                <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="200dp"
+                                android:layout_weight="5"
+                                app:cardElevation="8dp"
+                                app:cardCornerRadius="8dp"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="20"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        android:orientation="horizontal"
+                                        android:weightSum="10">
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="7"
+                                            android:src="@drawable/conad"/>
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="3"
+                                            android:src="@drawable/sconto10"/>
+                                    </LinearLayout>
+
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="9"
+                                        android:src="@drawable/melanzana"/>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="4"
+                                        android:orientation="horizontal"
+                                        android:weightSum="10">
+
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="5"
+                                            android:text="@string/prezzoMelanzana"
+                                            android:gravity="center"/>
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="5"
+                                            android:text="€0,89/kg"
+                                            android:gravity="center"/>
+
+                                    </LinearLayout>
+
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="4"
+                                        android:text="Melanzana"
+                                        android:gravity="center"
+                                        android:layout_marginBottom="4dp"
+                                        />
+                                </LinearLayout>
+
+
+
+                            </androidx.cardview.widget.CardView>
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_columnWeight="1"
-                                    android:layout_rowWeight="1"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
+                                    app:cardElevation="8dp"
+                                    app:cardCornerRadius="8dp"
+                                    android:layout_margin="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:weightSum="20"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="3"
+                                            android:orientation="horizontal"
+                                            android:weightSum="10">
+
+                                            <ImageView
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="7"
+                                                android:src="@drawable/carrefour"/>
+
+                                            <ImageView
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="3"
+                                                android:src="@drawable/sconto50"/>
+                                        </LinearLayout>
+
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="9"
+                                            android:src="@drawable/vino"/>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="4"
+                                            android:orientation="horizontal"
+                                            android:weightSum="10">
+
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="5"
+                                                android:text="@string/prezzoVino"
+                                                android:gravity="center"/>
+
+                                            <TextView
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="5"
+                                                android:text="€3,99"
+                                                android:gravity="center"/>
+
+                                        </LinearLayout>
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="4"
+                                            android:text="Vino Rosso Chianti D.O.P"
+                                            android:gravity="center"
+                                            android:layout_marginBottom="4dp"
+                                            />
+                                    </LinearLayout>
+
+
+
+                                </androidx.cardview.widget.CardView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_height="200dp"
+                                android:weightSum="10">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
                                     app:cardElevation="8dp"
                                     app:cardCornerRadius="8dp"
                                     android:layout_margin="10dp">
@@ -488,9 +683,8 @@
                                 </androidx.cardview.widget.CardView>
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_columnWeight="1"
-                                    android:layout_rowWeight="1"
+                                    android:layout_height="200dp"
+                                    android:layout_weight="5"
                                     app:cardElevation="8dp"
                                     app:cardCornerRadius="8dp"
                                     android:layout_margin="10dp">
@@ -567,10 +761,12 @@
 
 
                                 </androidx.cardview.widget.CardView>
+                            </TableRow>
 
 
-                            </GridLayout>
-                        </LinearLayout>
+
+                        </TableLayout>
+
                     </ScrollView>
 
                 <!--
@@ -590,7 +786,19 @@
 
                 </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/riempimento_base"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
     </LinearLayout>
+
+
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -600,7 +808,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" >
+        app:menu="@menu/bottom_nav_menu">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
