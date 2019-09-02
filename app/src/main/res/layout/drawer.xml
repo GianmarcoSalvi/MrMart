@@ -14,7 +14,7 @@
 
 
 
-    <include layout="@layout/activity_main"
+    <include layout="@layout/suo_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -29,10 +29,6 @@
         android:layout_gravity="start"
         app:itemTextColor="#808080"
         app:headerLayout="@layout/header_drawer"
-
         app:menu="@menu/drawer_menu"/>
 
-
-
-
-    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

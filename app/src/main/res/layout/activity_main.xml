@@ -6,8 +6,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
     
@@ -778,6 +777,23 @@
 
                                 </androidx.cardview.widget.CardView>
                             </TableRow>
+
+                            <TableRow
+                                android:layout_height="200dp"
+                                android:layout_width="200dp">
+
+
+                               <Button
+                                   android:id="@+id/ciao"
+                                   android:layout_height="match_parent"
+                                   android:layout_width="match_parent"
+                                   android:text="CIAP" />
+
+
+                            </TableRow>
+
+
+
 
 
 
