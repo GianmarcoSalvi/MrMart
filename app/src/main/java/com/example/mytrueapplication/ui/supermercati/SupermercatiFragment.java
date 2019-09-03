@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,7 +18,7 @@ import com.example.mytrueapplication.R;
 public class SupermercatiFragment extends Fragment {
 
     private SupermercatiViewModel supermercatiViewModel;
-
+    private SearchView mSearchView = null;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         supermercatiViewModel =
@@ -34,7 +35,9 @@ public class SupermercatiFragment extends Fragment {
         });
          */
 
-
+        //searchview
+        mSearchView = root.findViewById(R.id.search_view);
+        mSearchView.setQueryHint("Cerca supermercato");
         return root;
     }
 }

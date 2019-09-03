@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     private DrawerLayout mDrawerLayout = null;
     private ActionBarDrawerToggle mToggle = null;
+    private SearchView mSearchView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

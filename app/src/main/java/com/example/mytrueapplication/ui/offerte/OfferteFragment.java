@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +26,7 @@ public class OfferteFragment extends Fragment {
 
     private OfferteViewModel offerteViewModel;
     private CardView mCardView = null;
+    private SearchView mSearchView = null;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -52,6 +54,10 @@ public class OfferteFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //searchview
+        mSearchView = root.findViewById(R.id.search_view);
+        mSearchView.setQueryHint("Cerca prodotto");
 
         return root;
     }
