@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -83,7 +82,8 @@
                             android:layout_height="match_parent"
                             android:orientation="horizontal"
                             android:weightSum="10"
-                            android:layout_margin="10dp">
+                            android:layout_margin="10dp"
+                            >
 
                             <ImageView
                                 android:layout_width="0dp"
@@ -109,21 +109,14 @@
                                     android:layout_weight="6"
                                     android:text="Acqua minerale naturale Lete"
                                     android:gravity="center"
-                                    android:textSize="20dp">
+                                    android:textSize="16dp">
                                 </TextView>
 
-
-                                <View
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1">
-
-                                </View>
 
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
+                                    android:layout_weight="3"
                                     android:src="@drawable/conad">
                                 </ImageView>
 
@@ -144,19 +137,11 @@
                                 android:orientation="vertical">
 
 
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4"
-                                    android:src="@drawable/new_label2">
-
-                                </ImageView>
-
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
+                                    android:layout_weight="3"
                                     android:text="@string/prezzoAcqua"
                                     android:autoSizeTextType="uniform"
                                     android:gravity="center_horizontal">
@@ -166,7 +151,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
+                                    android:layout_weight="4"
                                     android:text="€1,99"
                                     android:gravity="center_horizontal"
                                     android:autoSizeTextType="uniform">
@@ -177,15 +162,13 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
+                                    android:layout_weight="3"
                                     android:src="@drawable/sconto20"
                                     android:layout_gravity="fill">
 
                                 </ImageView>
 
                             </LinearLayout>
-
-
 
                         </LinearLayout>
 
@@ -196,18 +179,20 @@
                         android:background="@android:color/black" />
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="150dp">
+                        android:layout_height="120dp">
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal"
-                            android:weightSum="10">
+                            android:weightSum="10"
+                            android:layout_margin="10dp">
 
                             <ImageView
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
-                                android:src="@drawable/acqua_lete">
+                                android:src="@drawable/banana"
+                                android:background="@drawable/border_image">
                             </ImageView>
 
                             <LinearLayout
@@ -217,19 +202,33 @@
                                 android:orientation="vertical"
                                 android:weightSum="10">
 
+
+
+
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="7"
-                                    android:text="Acqua minerale naturale Lete">
+                                    android:layout_weight="6"
+                                    android:text="Banana Chiquita"
+                                    android:gravity="center"
+                                    android:textSize="16dp">
                                 </TextView>
+
 
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="3"
-                                    android:src="@drawable/conad">
+                                    android:src="@drawable/elite">
                                 </ImageView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
                             </LinearLayout>
 
                             <LinearLayout
@@ -243,25 +242,120 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
-                                    android:src="@drawable/new_label">
+                                    android:layout_weight="3"
+                                    android:src="@drawable/new_label"
+                                    android:layout_gravity="fill">
 
                                 </ImageView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    android:text="€0,79/pz"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
+
+                                </TextView>
+
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_margin="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:src="@drawable/cibo_per_cani"
+                                android:background="@drawable/border_image">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+
+
 
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
-                                    android:text="cao">
+                                    android:layout_weight="6"
+                                    android:text="Croccantini per cani taglia media"
+                                    android:gravity="center"
+                                    android:textSize="16dp">
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/elite">
+                                </ImageView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:text="@string/prezzoCani"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:text="hello">
+                                    android:layout_weight="4"
+                                    android:text="€14,99"
+                                    android:gravity="center_horizontal"
+                                    android:autoSizeTextType="uniform">
 
                                 </TextView>
 
@@ -270,17 +364,456 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="3"
-                                    android:src="@drawable/sconto20">
+                                    android:src="@drawable/sconto40"
+                                    android:layout_gravity="fill">
 
                                 </ImageView>
 
                             </LinearLayout>
 
+                        </LinearLayout>
 
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_margin="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:src="@drawable/uova"
+                                android:background="@drawable/border_image">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="6"
+                                    android:text="Uova Bio 6 pz"
+                                    android:gravity="center"
+                                    android:textSize="16dp">
+                                </TextView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/carrefour">
+                                </ImageView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    android:text="€1,59"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
+
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3">
+                                </View>
+
+
+
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_margin="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:src="@drawable/acqua_lete"
+                                android:background="@drawable/border_image">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="6"
+                                    android:text="Acqua minerale naturale Lete"
+                                    android:gravity="center"
+                                    android:textSize="16dp">
+                                </TextView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/conad">
+                                </ImageView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:text="@string/prezzoAcqua"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    android:text="€1,99"
+                                    android:gravity="center_horizontal"
+                                    android:autoSizeTextType="uniform">
+
+                                </TextView>
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/sconto20"
+                                    android:layout_gravity="fill">
+
+                                </ImageView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_margin="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:src="@drawable/acqua_lete"
+                                android:background="@drawable/border_image">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="6"
+                                    android:text="Acqua minerale naturale Lete"
+                                    android:gravity="center"
+                                    android:textSize="16dp">
+                                </TextView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/conad">
+                                </ImageView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:text="@string/prezzoAcqua"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    android:text="€1,99"
+                                    android:gravity="center_horizontal"
+                                    android:autoSizeTextType="uniform">
+
+                                </TextView>
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/sconto20"
+                                    android:layout_gravity="fill">
+
+                                </ImageView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:layout_margin="10dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:src="@drawable/acqua_lete"
+                                android:background="@drawable/border_image">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:weightSum="10">
+
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="6"
+                                    android:text="Acqua minerale naturale Lete"
+                                    android:gravity="center"
+                                    android:textSize="16dp">
+                                </TextView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/conad">
+                                </ImageView>
+
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                </View>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:weightSum="10"
+                                android:orientation="vertical">
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:text="@string/prezzoAcqua"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    android:text="€1,99"
+                                    android:gravity="center_horizontal"
+                                    android:autoSizeTextType="uniform">
+
+                                </TextView>
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/sconto20"
+                                    android:layout_gravity="fill">
+
+                                </ImageView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black" />
+
+
+
 
                 </LinearLayout>
 
