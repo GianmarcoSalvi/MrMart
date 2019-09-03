@@ -77,7 +77,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardElevation="8dp"
                         app:cardCornerRadius="8dp">
 
@@ -91,6 +91,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="6"
+                                android:layout_marginTop="6dp"
                                 android:src="@drawable/elite">
                             </ImageView>
                             <View
@@ -110,7 +111,7 @@
                                 <ImageView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_weight="1"
                                     android:src="@drawable/fattorino">
                                 </ImageView>
 
@@ -131,10 +132,10 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="5"
-                                    android:text="Via Arno 1    220m"
-                                    android:autoSizeTextType="uniform"
-                                    android:gravity="bottom">
+                                    android:layout_weight="6"
+                                    android:gravity="right"
+                                    android:text="Via Arno 1 -> 220m"
+                                    android:autoSizeTextType="uniform">
                                 </TextView>
 
                             </LinearLayout>
@@ -143,7 +144,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardElevation="8dp"
                         app:cardCornerRadius="8dp">
 
@@ -198,9 +199,8 @@
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
                                     android:layout_weight="5"
-                                    android:text="Via Corsica 13   6500m"
-                                    android:autoSizeTextType="uniform"
-                                    android:gravity="bottom">
+                                    android:text="Via Corsica 13   650m"
+                                    android:autoSizeTextType="uniform">
                                 </TextView>
 
                             </LinearLayout>
@@ -209,7 +209,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardElevation="8dp"
                         app:cardCornerRadius="8dp">
 
@@ -265,8 +265,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="5"
                                     android:text="Via Po 106    700m"
-                                    android:autoSizeTextType="uniform"
-                                    android:gravity="bottom">
+                                    android:autoSizeTextType="uniform">
                                 </TextView>
 
                             </LinearLayout>
@@ -275,7 +274,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
-                        android:layout_margin="10dp"
+                        android:layout_margin="8dp"
                         app:cardElevation="8dp"
                         app:cardCornerRadius="8dp">
 
@@ -308,7 +307,7 @@
                                 <ImageView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
-                                    android:layout_weight="2"
+                                    android:layout_weight="1"
                                     android:src="@drawable/fattorino">
                                 </ImageView>
 
@@ -329,10 +328,141 @@
                                 <TextView
                                     android:layout_width="0dp"
                                     android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:text="Piazza dell'Indipendenza 28 -> 1,1km"
+                                    android:gravity="right">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/coop">
+                            </ImageView>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                >
+                            </View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:layout_margin="4dp"
+                                android:weightSum="10">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/fattorino">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="@string/consegnaCoop"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
                                     android:layout_weight="5"
-                                    android:text="Piazza dell'Indipendenza 28    1,1km"
-                                    android:autoSizeTextType="uniform"
-                                    android:gravity="bottom">
+                                    android:text="Via 20 Settembre 55   800m"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="8dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:layout_marginTop="6dp"
+                                android:src="@drawable/pam">
+                            </ImageView>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                >
+                            </View>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:layout_margin="4dp"
+                                android:weightSum="10">
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/fattorino">
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="@string/consegnaPam"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:text="Via Alessandria 175  320m"
+                                    android:autoSizeTextType="uniform">
                                 </TextView>
 
                             </LinearLayout>
@@ -350,14 +480,12 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/riempimento_base"
+        <View
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.8"
-            android:orientation="vertical">
+            android:layout_weight="0.8">
 
-        </LinearLayout>
+        </View>
 
     </LinearLayout>
 
