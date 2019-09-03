@@ -83,7 +83,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:orientation="horizontal"
-                            android:weightSum="10">
+                            android:weightSum="10"
+                            android:layout_margin="5dp">
 
                             <ImageView
                                 android:layout_width="0dp"
@@ -102,14 +103,16 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="7"
-                                    android:text="Acqua minerale naturale Lete">
+                                    android:layout_weight="8"
+                                    android:text="Acqua minerale naturale Lete"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center">
                                 </TextView>
 
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="3"
+                                    android:layout_weight="2"
                                     android:src="@drawable/conad">
                                 </ImageView>
                             </LinearLayout>
@@ -125,8 +128,8 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="2"
-                                    android:src="@drawable/new_label">
+                                    android:layout_weight="4"
+                                    android:src="@drawable/new_label2">
 
                                 </ImageView>
 
@@ -135,15 +138,19 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="2"
-                                    android:text="cao">
+                                    android:text="@string/prezzoAcqua"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center_horizontal">
 
                                 </TextView>
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:text="hello">
+                                    android:layout_weight="2"
+                                    android:text="€1,99"
+                                    android:gravity="center_horizontal"
+                                    android:autoSizeTextType="uniform">
 
                                 </TextView>
 
@@ -151,8 +158,9 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:src="@drawable/sconto20">
+                                    android:layout_weight="2"
+                                    android:src="@drawable/sconto20"
+                                    android:layout_gravity="fill">
 
                                 </ImageView>
 
