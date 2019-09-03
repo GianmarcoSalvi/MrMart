@@ -18,4 +18,10 @@
     <string name="prezzoCani"> <strike>€24,99</strike></string>
     <string name="prezzoMelanzana"> <strike>€0,99/kg</strike></string>
 
+
+    <string name="consegnaElite">€3,00</string>
+    <string name="consegnaConad">€4,00</string>
+    <string name="consegnaCarrefour">€3,00</string>
+    <string name="consegnaSimply">€3,50</string>
+
 </resources>

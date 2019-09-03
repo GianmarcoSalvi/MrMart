@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -63,737 +64,289 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="8.5"
-            android:orientation="vertical">
+            android:layout_weight="8.5">
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fillViewport="true">
 
-
-
-                <TableLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <!--
-                        <GridLayout
-                            android:rowCount="3"
-                            android:columnCount="2"
-                            android:alignmentMode="alignMargins"
-                            android:columnOrderPreserved="false"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:padding="14dp">
+                            android:weightSum="10"
+                            android:orientation="vertical">
 
-                            -->
-
-
-                    <TableRow
-                        android:layout_height="200dp"
-                        android:weightSum="10">
-
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:src="@drawable/elite">
+                            </ImageView>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                >
+                            </View>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/conad"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto20"/>
-                                </LinearLayout>
-
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:layout_margin="4dp"
+                                android:weightSum="10">
 
                                 <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/acqua_lete"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="@string/prezzoAcqua"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="€1,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/fattorino">
+                                </ImageView>
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4.5"
-                                    android:text="Acqua minerale naturale Lete"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="@string/consegnaElite"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:text="Via Arno 1    220m"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="bottom">
+                                </TextView>
+
                             </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            android:orientation="vertical">
 
-
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:src="@drawable/simply">
+                            </ImageView>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                >
+                            </View>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/elite"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto50"/>
-                                </LinearLayout>
-
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:layout_margin="4dp"
+                                android:weightSum="10">
 
                                 <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/ananas"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_weight="5"
-                                        android:text="@string/prezzoAnanas"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:text="€0,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/fattorino">
+                                </ImageView>
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4.5"
-                                    android:text="Ananas tropicale 1 pz."
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="@string/consegnaSimply"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:text="Via Corsica 13   6500m"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="bottom">
+                                </TextView>
+
                             </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            android:orientation="vertical">
 
-
-                        </androidx.cardview.widget.CardView>
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_height="200dp"
-                        android:weightSum="10">
-
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:src="@drawable/carrefour">
+                            </ImageView>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                >
+                            </View>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/carrefour"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto40"/>
-                                </LinearLayout>
-
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:layout_margin="4dp"
+                                android:weightSum="10">
 
                                 <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/cereali"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="4.5"
-                                        android:text="@string/prezzoCereali"
-                                        android:autoSizeTextType="uniform"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="€1,79"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/fattorino">
+                                </ImageView>
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4"
-                                    android:text="Cereali Cheerios"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="@string/consegnaCarrefour"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                </View>
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:text="Via Po 106    700m"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="bottom">
+                                </TextView>
+
                             </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            android:orientation="vertical">
 
-
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:src="@drawable/conad">
+                            </ImageView>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                >
+                            </View>
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/elite"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto33"/>
-                                </LinearLayout>
-
+                                android:layout_height="0dp"
+                                android:layout_weight="3"
+                                android:orientation="horizontal"
+                                android:layout_margin="4dp"
+                                android:weightSum="10">
 
                                 <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/fagioli"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:text="@string/prezzoFagioli"
-                                        android:autoSizeTextType="uniform"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="4.5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="€0,66"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:src="@drawable/fattorino">
+                                </ImageView>
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4"
-                                    android:text="Fagioli in scatola"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
-                            </LinearLayout>
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="@string/consegnaConad"
+                                    android:autoSizeTextType="uniform">
+                                </TextView>
 
-
-
-                        </androidx.cardview.widget.CardView>
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_height="200dp"
-                        android:weightSum="10">
-
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/conad"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto10"/>
-                                </LinearLayout>
-
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/melanzana"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="4.5"
-                                        android:text="@string/prezzoMelanzana"
-                                        android:autoSizeTextType="uniform"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_weight="5"
-                                        android:text="€0,89/kg"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+                                </View>
 
                                 <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4"
-                                    android:text="Melanzana"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:text="Piazza dell'Indipendenza 28    1,1km"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="bottom">
+                                </TextView>
+
                             </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
 
 
 
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
+                </LinearLayout>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/carrefour"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto50"/>
-                                </LinearLayout>
-
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/vino"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="4.5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="@string/prezzoVino"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:text="€3,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4"
-                                    android:text="Vino Rosso Chianti D.O.P"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
-                            </LinearLayout>
-
-
-
-                        </androidx.cardview.widget.CardView>
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_height="200dp"
-                        android:weightSum="10">
-
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/elite"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto40"/>
-                                </LinearLayout>
-
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/cibo_per_cani"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="@string/prezzoCani"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_weight="5"
-                                        android:text="€14,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4.5"
-                                    android:text="Croccantini per cani taglia media"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
-                            </LinearLayout>
-
-
-
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/carrefour"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto33"/>
-                                </LinearLayout>
-
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="9"
-                                    android:src="@drawable/tenerone"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="@string/prezzoTenerone"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_weight="5"
-                                        android:text="€1,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4.5"
-                                    android:text="Teneroni di prosciutto cotto"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
-                            </LinearLayout>
-
-
-
-                        </androidx.cardview.widget.CardView>
-                    </TableRow>
-
-
-                </TableLayout>
 
             </ScrollView>
 
-            <!--
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="button" />
-            <Button
-                android:id="@+id/butto"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="button" />
-
-                -->
 
         </LinearLayout>
 
