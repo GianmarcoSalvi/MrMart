@@ -12,6 +12,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
@@ -25,6 +26,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
@@ -49,10 +51,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.nav_view);
         navigation.setOnNavigationItemSelectedListener(this);
-
-
-
         navigation.setSelectedItemId(R.id.navigation_offerte);
+
 
 
         /*
@@ -69,8 +69,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         */
 
 
-
-
         //NOSTRO CODICE
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
@@ -79,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setElevation(0);
+
 
     }
 
@@ -135,6 +134,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }
 
