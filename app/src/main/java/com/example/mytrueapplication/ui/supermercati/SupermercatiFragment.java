@@ -34,7 +34,7 @@ public class SupermercatiFragment extends Fragment {
             }
         });
          */
-
+afwefrwg
         //searchview
         mSearchView = root.findViewById(R.id.search_view);
         mSearchView.setQueryHint("Cerca supermercato");
