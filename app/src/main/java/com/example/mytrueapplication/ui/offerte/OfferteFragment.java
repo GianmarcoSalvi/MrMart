@@ -7,19 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.mytrueapplication.MainActivity;
 import com.example.mytrueapplication.R;
-import com.example.mytrueapplication.attivita2;
 
 
 public class OfferteFragment extends Fragment {
@@ -46,7 +40,8 @@ public class OfferteFragment extends Fragment {
 
         //setting new activity from card click
         mCardView = root.findViewById(R.id.card1);
-        mCardView.setOnClickListener(new View.OnClickListener() {
+
+        /*mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -54,7 +49,7 @@ public class OfferteFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+        */
         //searchview
         mSearchView = root.findViewById(R.id.search_view);
         mSearchView.setQueryHint("Cerca prodotto");

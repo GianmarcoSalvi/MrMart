@@ -1,9 +1,8 @@
 package com.example.mytrueapplication;
 
 
-import android.content.Intent;
+import android.content.Context;
 import android.os.Bundle;
-
 import com.example.mytrueapplication.ui.offerte.OfferteFragment;
 import com.example.mytrueapplication.ui.preferiti.PreferitiFragment;
 import com.example.mytrueapplication.ui.supermercati.SupermercatiFragment;
@@ -11,34 +10,35 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.SearchView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     // Definizione degli oggetti
 
-    private DrawerLayout mDrawerLayout = null;
-    private ActionBarDrawerToggle mToggle = null;
-    private SearchView mSearchView = null;
+
+    final Fragment offerteFragment = new OfferteFragment();
+    final Fragment supermercatiFragment = new SupermercatiFragment();
+    final Fragment preferitiFragment = new PreferitiFragment();
+    final FragmentManager fragmentManager = getSupportFragmentManager();
+    Fragment active = offerteFragment;
+
+
+    private DrawerLayout mDrawerLayout;
+    private ActionBarDrawerToggle mToggle;
+    private Fragment mContent;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
 
         // CODICE GOOGLE
         super.onCreate(savedInstanceState);
@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setElevation(0);
 
+        //fragmentManager.beginTransaction().add(R.id.drawer_layout, preferitiFragment, "3").hide(preferitiFragment).commit();
+        //fragmentManager.beginTransaction().add(R.id.drawer_layout, supermercatiFragment, "2").hide(supermercatiFragment).commit();
+        //fragmentManager.beginTransaction().add(R.id.drawer_layout,offerteFragment, "1").commit();
+
+
 
     }
 
@@ -92,21 +97,31 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (item.getItemId()) {
             case R.id.navigation_offerte:
                 fragment = new OfferteFragment();
+                //fragmentManager.beginTransaction().hide(active).show(offerteFragment).commit();
+                //active = offerteFragment;
                 getSupportActionBar().setTitle("Offerte");
                 break;
+                //return true;
 
             case R.id.navigation_supermercati:
                 fragment = new SupermercatiFragment();
+                //fragmentManager.beginTransaction().hide(active).show(supermercatiFragment).commit();
+                //&active = supermercatiFragment;
                 getSupportActionBar().setTitle("Supermercati");
                 break;
+                //return true;
 
             case R.id.navigation_preferiti:
                 fragment = new PreferitiFragment();
+                //fragmentManager.beginTransaction().hide(active).show(preferitiFragment).commit();
+                //active = preferitiFragment;
                 getSupportActionBar().setTitle("Preferiti");
                 break;
+                //return true;
         }
 
         return loadFragment(fragment);
+        //return false;
     }
 
     private boolean loadFragment(Fragment fragment) {
@@ -135,6 +150,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 
 }

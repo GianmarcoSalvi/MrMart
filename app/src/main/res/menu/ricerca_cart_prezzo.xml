@@ -14,17 +14,18 @@
     </item>
 
 
-
-
     <item
         android:id="@+id/carrello"
         android:icon="@drawable/ic_carrello"
         android:title="carrello"
         app:showAsAction="always"
         />
+    <item
+        android:id="@+id/prezzo1"
+        android:title="€ 0,00"
 
-
-
-
+        android:actionLayout="@layout/cart_price"
+        app:showAsAction="always"
+        />
 
 </menu>

@@ -69,6 +69,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="6"
+                                    android:layout_margin="3dp"
                                     android:text="Acqua minerale naturale Lete"
                                     android:gravity="center"
                                     android:textSize="16dp">
@@ -172,6 +173,7 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="6"
                                     android:text="Banana Chiquita"
+                                    android:layout_margin="3dp"
                                     android:gravity="center"
                                     android:textSize="16dp">
                                 </TextView>
@@ -272,6 +274,7 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="6"
                                     android:text="Croccantini per cani taglia media"
+                                    android:layout_margin="3dp"
                                     android:gravity="center"
                                     android:textSize="16dp">
                                 </TextView>
@@ -373,6 +376,7 @@
                                     android:layout_weight="6"
                                     android:text="Detersivo Omino Bianco"
                                     android:gravity="center"
+                                    android:layout_margin="3dp"
                                     android:textSize="16dp">
                                 </TextView>
 
@@ -466,6 +470,7 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="6"
                                     android:text="Prosciutto cotto Rovagnati"
+                                    android:layout_margin="3dp"
                                     android:gravity="center"
                                     android:textSize="16dp">
                                 </TextView>
@@ -560,6 +565,7 @@
                                     android:layout_height="0dp"
                                     android:layout_weight="6"
                                     android:text="Uova Bio 6 pz"
+                                    android:layout_margin="3dp"
                                     android:gravity="center"
                                     android:textSize="16dp">
                                 </TextView>

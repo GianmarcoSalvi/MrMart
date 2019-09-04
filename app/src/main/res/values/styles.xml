@@ -7,6 +7,11 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/categorie_supermercati</item>
     </style>
-    
+
+    <style name="categorie_supermercati" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:height">60dp</item>
+        <item name="android:background">@drawable/elite</item>
+    </style>
 </resources>

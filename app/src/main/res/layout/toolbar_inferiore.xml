@@ -3,47 +3,46 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_inferiore"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/toolbar_inferiore"
         android:background="@color/colorPrimary"
         android:elevation="4dp"
-        android:focusableInTouchMode="true"
-        >
+        android:focusableInTouchMode="true">
 
         <LinearLayout
             android:id="@+id/parte1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="10"
+            android:background="@color/colorPrimary"
             android:orientation="horizontal"
-            android:background="@color/colorPrimary">
+            android:weightSum="10">
 
             <SearchView
                 android:id="@+id/search_view"
                 android:layout_width="0dp"
-                android:layout_weight="8"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="16dp"
-                android:iconifiedByDefault="false"
-                android:queryHint="Cerca prodotto"
+                android:layout_weight="8"
                 android:background="@drawable/round_searchbar"
-                />
+                android:iconifiedByDefault="false"
+                android:queryHint="Cerca prodotto" />
 
-            <TextView
+            <View
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"/>
+                android:layout_weight="0.5" />
 
             <ImageButton
                 android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1.5"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_filters"
-                android:layout_margin="16dp"
                 android:background="@drawable/round_searchbar"
-                />
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_filters" />
 
         </LinearLayout>
 
