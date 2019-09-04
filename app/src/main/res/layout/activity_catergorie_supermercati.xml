@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/frutta_sfondo">
+                android:background="@drawable/verdura_sfondo">
             </LinearLayout>
 
 
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/igiene_sfondo">
+                android:background="@drawable/latte_sfondo">
             </LinearLayout>
 
 
@@ -121,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/scatole_sfondo">
+                android:background="@drawable/surgelati_sfondo">
             </LinearLayout>
 
 
@@ -140,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/frutta_sfondo">
+                android:background="@drawable/pane_sfondo">
             </LinearLayout>
 
 
@@ -159,7 +159,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/igiene_sfondo">
+                android:background="@drawable/pesce_sfondo">
             </LinearLayout>
 
 
