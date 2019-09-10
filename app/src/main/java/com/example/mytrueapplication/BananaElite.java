@@ -27,8 +27,14 @@ public class BananaElite extends AppCompatActivity {
     String titolo_string;
     TextView titolo_card = null;
 
-    String prezzo_string;
-    TextView prezzo_card = null;
+    int prezzo_vecchio_int;
+    TextView prezzo_vecchio_card = null;
+
+    String prezzo_nuovo_string;
+    TextView prezzo_nuovo_card = null;
+
+    int sconto_int;
+    ImageView sconto_card = null;
 
     String descrizione_string;
     TextView descrizione_card = null;
@@ -52,7 +58,7 @@ public class BananaElite extends AppCompatActivity {
         if (extras == null) {
             return;
         }
-        
+
         supermercato_int = getIntent().getIntExtra("Supermercato", -1);
         supermercato_card = findViewById(R.id.supermercato_card);
         supermercato_card.setImageResource(supermercato_int);
@@ -65,9 +71,22 @@ public class BananaElite extends AppCompatActivity {
         titolo_card = findViewById(R.id.titolo_card);
         titolo_card.setText(titolo_string);
 
-        prezzo_string = getIntent().getStringExtra("Prezzo");
-        prezzo_card = findViewById(R.id.prezzo_card);
-        prezzo_card.setText(prezzo_string);
+        prezzo_vecchio_int = getIntent().getIntExtra("PrezzoVecchio", -1);
+        if(prezzo_vecchio_int != -1) {
+            prezzo_vecchio_card = findViewById(R.id.prezzo_vecchio_card);
+            prezzo_vecchio_card.setText(prezzo_vecchio_int);
+        }
+
+        prezzo_nuovo_string = getIntent().getStringExtra("PrezzoNuovo");
+        prezzo_nuovo_card = findViewById(R.id.prezzo_nuovo_card);
+        prezzo_nuovo_card.setText(prezzo_nuovo_string);
+
+
+        sconto_int = getIntent().getIntExtra("Sconto", -1);
+        if(sconto_int != -1) {
+            sconto_card = findViewById(R.id.sconto_card);
+            sconto_card.setImageResource(sconto_int);
+        }
 
         descrizione_string = getIntent().getStringExtra("Descrizione");
         descrizione_card = findViewById(R.id.descrizione_card);

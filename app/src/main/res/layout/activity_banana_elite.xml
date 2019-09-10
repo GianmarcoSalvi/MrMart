@@ -51,17 +51,59 @@
 
         </TextView>
 
-        <TextView
-            android:id="@+id/prezzo_card"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:autoSizeTextType="uniform"
-            android:layout_margin="5dp"
-            android:text="€0,80/pz">
+            android:orientation="horizontal"
+            android:weightSum="10">
 
-        </TextView>
+
+            <TextView
+                android:id="@+id/prezzo_vecchio_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:layout_margin="5dp"
+                android:text="">
+
+
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/prezzo_nuovo_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:autoSizeTextType="uniform"
+                android:layout_margin="5dp"
+                android:text="€0,99">
+
+            </TextView>
+
+
+
+
+            <ImageView
+                android:id="@+id/sconto_card"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+            </ImageView>
+
+
+
+
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/descrizione_card"
