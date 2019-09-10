@@ -9,20 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".AnanasOfferte"
-            android:label=""
-            android:parentActivityName=".MainActivity">
-        </activity>
-        <activity
-            android:name=".BananaElite"
+        <activity android:name=".ProdottoGenerico"
             android:label=""
             android:parentActivityName=".FruttaElite">
         </activity>
         <activity
             android:name=".FruttaElite"
             android:label="Frutta"
-            android:parentActivityName=".CatergorieSupermercati"></activity>
+            android:parentActivityName=".CatergorieSupermercati" />
         <activity
             android:name=".CatergorieSupermercati"
             android:label="Elite"
