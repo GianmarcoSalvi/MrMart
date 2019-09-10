@@ -13,6 +13,8 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.mytrueapplication.AnanasOfferte;
+import com.example.mytrueapplication.FruttaElite;
 import com.example.mytrueapplication.R;
 
 
@@ -38,19 +40,18 @@ public class OfferteFragment extends Fragment {
         });*/
 
 
-        //setting new activity from card click
-        mCardView = root.findViewById(R.id.card1);
-
-        /*mCardView.setOnClickListener(new View.OnClickListener() {
+        //Passa all'activity figlia ananas_offerte
+        mCardView = root.findViewById(R.id.ananas_offerte);
+        mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getContext(), attivita2.class);
+                Intent intent = new Intent(view.getContext(), AnanasOfferte.class);
                 startActivity(intent);
             }
         });
-        */
-        //searchview
+
+
         mSearchView = root.findViewById(R.id.search_view);
         mSearchView.setQueryHint("Cerca prodotto");
 

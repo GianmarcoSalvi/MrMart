@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
         switch (item.getItemId()) {
             case R.id.navigation_offerte:
+
                 fragment = new OfferteFragment();
                 //fragmentManager.beginTransaction().hide(active).show(offerteFragment).commit();
                 //active = offerteFragment;
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 //return true;
 
             case R.id.navigation_supermercati:
+
                 fragment = new SupermercatiFragment();
                 //fragmentManager.beginTransaction().hide(active).show(supermercatiFragment).commit();
                 //&active = supermercatiFragment;
@@ -112,6 +114,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 //return true;
 
             case R.id.navigation_preferiti:
+
                 fragment = new PreferitiFragment();
                 //fragmentManager.beginTransaction().hide(active).show(preferitiFragment).commit();
                 //active = preferitiFragment;

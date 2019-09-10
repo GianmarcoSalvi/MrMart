@@ -9,12 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CatergorieSupermercati"
-            android:parentActivityName=".MainActivity"
-            android:label="Elite">
-
-
+        <activity
+            android:name=".AnanasOfferte"
+            android:label=""
+            android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".BananaElite"
+            android:label=""
+            android:parentActivityName=".FruttaElite">
+        </activity>
+        <activity
+            android:name=".FruttaElite"
+            android:label="Frutta"
+            android:parentActivityName=".CatergorieSupermercati"></activity>
+        <activity
+            android:name=".CatergorieSupermercati"
+            android:label="Elite"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="adjustPan"> <!-- Serve per non far andar sopra bottom bar e far vedere ricerca -->

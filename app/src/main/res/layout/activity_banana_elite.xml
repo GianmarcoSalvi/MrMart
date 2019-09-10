@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BananaElite"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/supermercato_card"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/elite">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/immagine_prodotto_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/banana">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/titolo_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:layout_margin="5dp"
+            android:text="Banana chiquita">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/prezzo_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:layout_margin="5dp"
+            android:text="€0,80/pz">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/descrizione_card"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:autoSizeTextType="uniform"
+            android:layout_margin="5dp"
+            android:text="Descrizione prodotto:\nBanana dalla buccia giallo oro, dolce e gustosa. La banana è una fonte naturale di potassio, vitamine e minerali.">
+
+        </TextView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </View>
+
+    </LinearLayout>
+
+
+    //Toolbar_inferiore_prodotto
+    <include layout="@layout/toolbar_inferiore_prodotto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </include>
+
+
+
+</LinearLayout>
