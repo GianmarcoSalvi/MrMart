@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FruttaElite">
+    tools:context=".CategoriaGenerica">
 
 
     <ScrollView
@@ -15,14 +15,15 @@
         android:fillViewport="true">
 
         <LinearLayout
+            android:id="@+id/layout_cards_prodotti"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/ananas_elite"
+                android:id="@+id/card_categoria_1"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -32,6 +33,7 @@
                     >
 
                     <ImageView
+                        android:id="@+id/immagine_card_categoria_1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
@@ -50,6 +52,7 @@
 
 
                         <TextView
+                            android:id="@+id/titolo_card_categoria_1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="6"
@@ -61,6 +64,7 @@
 
 
                         <ImageView
+                            android:id="@+id/nome_sup_card_categoria_1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
@@ -86,20 +90,22 @@
 
 
                         <TextView
+                            android:id="@+id/prezzo_old_card_categoria_1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
-                            android:text="@string/prezzoAnanas"
+                            android:text=""
                             android:autoSizeTextType="uniform"
                             android:gravity="center_horizontal">
 
                         </TextView>
 
                         <TextView
+                            android:id="@+id/prezzo_new_card_categoria_1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="4"
-                            android:text="€0,99"
+                            android:text="€0.99"
                             android:gravity="center_horizontal"
                             android:autoSizeTextType="uniform">
 
@@ -107,10 +113,10 @@
 
 
                         <ImageView
+                            android:id="@+id/sconto_card_categoria_1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
-                            android:src="@drawable/sconto50"
                             android:layout_gravity="fill">
 
                         </ImageView>
@@ -125,9 +131,9 @@
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
             <androidx.cardview.widget.CardView
-                android:id="@+id/arancia_elite"
+                android:id="@+id/card_categoria_2"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -137,10 +143,11 @@
                     >
 
                     <ImageView
+                        android:id="@+id/immagine_card_categoria_2"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:src="@drawable/arancia"
+                        android:src="@drawable/ananas"
                         android:background="@drawable/border_image">
                     </ImageView>
 
@@ -152,18 +159,22 @@
                         android:weightSum="10">
 
 
+
+
                         <TextView
+                            android:id="@+id/titolo_card_categoria_2"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="6"
-                            android:text="Arancia sanguinello"
-                            android:gravity="center"
                             android:layout_margin="3dp"
+                            android:text="Ananas tropicale"
+                            android:gravity="center"
                             android:textSize="16dp">
                         </TextView>
 
 
                         <ImageView
+                            android:id="@+id/nome_sup_card_categoria_2"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
@@ -186,30 +197,39 @@
                         android:weightSum="10"
                         android:orientation="vertical">
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+
 
                         <TextView
+                            android:id="@+id/prezzo_old_card_categoria_2"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€0,45/kg"
+                            android:layout_weight="3"
+                            android:text=""
                             android:autoSizeTextType="uniform"
                             android:gravity="center_horizontal">
 
                         </TextView>
 
-                        <View
+                        <TextView
+                            android:id="@+id/prezzo_new_card_categoria_2"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+                            android:layout_weight="4"
+                            android:text="€0.99"
+                            android:gravity="center_horizontal"
+                            android:autoSizeTextType="uniform">
+
+                        </TextView>
 
 
+                        <ImageView
+                            android:id="@+id/sconto_card_categoria_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:layout_gravity="fill">
 
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -221,9 +241,9 @@
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_categoria_3"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:id="@+id/banana_elite">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -233,10 +253,11 @@
                     >
 
                     <ImageView
+                        android:id="@+id/immagine_card_categoria_3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:src="@drawable/banana"
+                        android:src="@drawable/ananas"
                         android:background="@drawable/border_image">
                     </ImageView>
 
@@ -248,18 +269,22 @@
                         android:weightSum="10">
 
 
+
+
                         <TextView
+                            android:id="@+id/titolo_card_categoria_3"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="6"
-                            android:text="Banana Chiquita"
-                            android:gravity="center"
                             android:layout_margin="3dp"
+                            android:text="Ananas tropicale"
+                            android:gravity="center"
                             android:textSize="16dp">
                         </TextView>
 
 
                         <ImageView
+                            android:id="@+id/nome_sup_card_categoria_3"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
@@ -282,30 +307,39 @@
                         android:weightSum="10"
                         android:orientation="vertical">
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+
 
                         <TextView
+                            android:id="@+id/prezzo_old_card_categoria_3"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€0,80/kg"
+                            android:layout_weight="3"
+                            android:text=""
                             android:autoSizeTextType="uniform"
                             android:gravity="center_horizontal">
 
                         </TextView>
 
-                        <View
+                        <TextView
+                            android:id="@+id/prezzo_new_card_categoria_3"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+                            android:layout_weight="4"
+                            android:text="€0.99"
+                            android:gravity="center_horizontal"
+                            android:autoSizeTextType="uniform">
+
+                        </TextView>
 
 
+                        <ImageView
+                            android:id="@+id/sconto_card_categoria_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:layout_gravity="fill">
 
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -317,9 +351,9 @@
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
             <androidx.cardview.widget.CardView
-                android:id="@+id/bergamotto_elite"
+                android:id="@+id/card_categoria_4"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -329,10 +363,11 @@
                     >
 
                     <ImageView
+                        android:id="@+id/immagine_card_categoria_4"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:src="@drawable/bergamotto"
+                        android:src="@drawable/ananas"
                         android:background="@drawable/border_image">
                     </ImageView>
 
@@ -344,18 +379,22 @@
                         android:weightSum="10">
 
 
+
+
                         <TextView
+                            android:id="@+id/titolo_card_categoria_4"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="6"
-                            android:text="Bergamotto calabrese"
-                            android:gravity="center"
                             android:layout_margin="3dp"
+                            android:text="Ananas tropicale"
+                            android:gravity="center"
                             android:textSize="16dp">
                         </TextView>
 
 
                         <ImageView
+                            android:id="@+id/nome_sup_card_categoria_4"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
@@ -378,30 +417,39 @@
                         android:weightSum="10"
                         android:orientation="vertical">
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+
 
                         <TextView
+                            android:id="@+id/prezzo_old_card_categoria_4"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€3,99/kg"
+                            android:layout_weight="3"
+                            android:text=""
                             android:autoSizeTextType="uniform"
                             android:gravity="center_horizontal">
 
                         </TextView>
 
-                        <View
+                        <TextView
+                            android:id="@+id/prezzo_new_card_categoria_4"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+                            android:layout_weight="4"
+                            android:text="€0.99"
+                            android:gravity="center_horizontal"
+                            android:autoSizeTextType="uniform">
+
+                        </TextView>
 
 
+                        <ImageView
+                            android:id="@+id/sconto_card_categoria_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:layout_gravity="fill">
 
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -413,9 +461,9 @@
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
             <androidx.cardview.widget.CardView
-                android:id="@+id/cocomero_elite"
+                android:id="@+id/card_categoria_5"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -425,10 +473,11 @@
                     >
 
                     <ImageView
+                        android:id="@+id/immagine_card_categoria_5"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
-                        android:src="@drawable/cocomero"
+                        android:src="@drawable/ananas"
                         android:background="@drawable/border_image">
                     </ImageView>
 
@@ -440,18 +489,22 @@
                         android:weightSum="10">
 
 
+
+
                         <TextView
+                            android:id="@+id/titolo_card_categoria_5"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="6"
-                            android:text="Cocomero"
-                            android:gravity="center"
                             android:layout_margin="3dp"
+                            android:text="Ananas tropicale"
+                            android:gravity="center"
                             android:textSize="16dp">
                         </TextView>
 
 
                         <ImageView
+                            android:id="@+id/nome_sup_card_categoria_5"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:layout_weight="3"
@@ -474,30 +527,39 @@
                         android:weightSum="10"
                         android:orientation="vertical">
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+
 
                         <TextView
+                            android:id="@+id/prezzo_old_card_categoria_5"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€0,30/kg"
+                            android:layout_weight="3"
+                            android:text=""
                             android:autoSizeTextType="uniform"
                             android:gravity="center_horizontal">
 
                         </TextView>
 
-                        <View
+                        <TextView
+                            android:id="@+id/prezzo_new_card_categoria_5"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
+                            android:layout_weight="4"
+                            android:text="€0.99"
+                            android:gravity="center_horizontal"
+                            android:autoSizeTextType="uniform">
+
+                        </TextView>
 
 
+                        <ImageView
+                            android:id="@+id/sconto_card_categoria_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            android:layout_gravity="fill">
 
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -508,10 +570,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
+
+
+            <!--
             <androidx.cardview.widget.CardView
                 android:id="@+id/fragole_elite"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -607,7 +672,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/kiwi_elite"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -703,7 +768,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/limone_elite"
                 android:layout_width="match_parent"
-                android:layout_height="120dp">
+                android:layout_height="160dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -796,6 +861,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
+
+                -->
 
         </LinearLayout>
 

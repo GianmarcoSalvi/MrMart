@@ -39,7 +39,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/acqua_preferiti"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                    android:layout_height="160dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -116,7 +116,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
-                                android:text="€1,99"
+                                android:text="€1.99"
                                 android:gravity="center_horizontal"
                                 android:autoSizeTextType="uniform">
 
@@ -144,7 +144,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/banana_preferiti"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                    android:layout_height="160dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -224,7 +224,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
-                                android:text="€0,79"
+                                android:text="€0.80/kg"
                                 android:autoSizeTextType="uniform"
                                 android:gravity="center_horizontal">
 
@@ -245,7 +245,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/croccantini_preferiti"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                    android:layout_height="160dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -321,7 +321,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
-                                android:text="€14,99"
+                                android:text="€14.99"
                                 android:gravity="center_horizontal"
                                 android:autoSizeTextType="uniform">
 
@@ -349,7 +349,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/detersivo_preferiti"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                    android:layout_height="160dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -418,7 +418,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
-                                android:text="€3,99"
+                                android:text="€3.99"
                                 android:autoSizeTextType="uniform"
                                 android:gravity="center_horizontal">
 
@@ -445,7 +445,7 @@
                 <androidx.cardview.widget.CardView
                     android:id="@+id/prosciutto_cotto_preferiti"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                    android:layout_height="160dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -514,7 +514,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
-                                android:text="€1,09"
+                                android:text="€1.09"
                                 android:autoSizeTextType="uniform"
                                 android:gravity="center_horizontal">
 
@@ -538,10 +538,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@android:color/black" />
+
+                <!--
                 <androidx.cardview.widget.CardView
                     android:id="@+id/uova_preferiti"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp">
+                    android:layout_height="160dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -634,6 +636,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@android:color/black" />
+                    -->
 
 
 

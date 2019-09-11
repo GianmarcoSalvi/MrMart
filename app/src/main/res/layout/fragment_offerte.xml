@@ -51,14 +51,14 @@
 
 
                     <TableRow
-                        android:layout_height="200dp"
+                        android:layout_height="230dp"
                         android:weightSum="10">
 
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/acqua_offerte"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
+                            android:layout_height="230dp"
                             android:layout_weight="5"
 
                             app:cardElevation="8dp"
@@ -120,7 +120,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_weight="5"
                                         android:autoSizeTextType="uniform"
-                                        android:text="€1,99"
+                                        android:text="€1.99"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -142,7 +142,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/ananas_offerte"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
+                            android:layout_height="230dp"
                             android:layout_weight="5"
 
                             app:cardElevation="8dp"
@@ -204,7 +204,7 @@
                                         android:autoSizeTextType="uniform"
                                         android:layout_height="match_parent"
                                         android:layout_weight="5"
-                                        android:text="€0,99"
+                                        android:text="€0.99"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -226,14 +226,14 @@
                     </TableRow>
 
                     <TableRow
-                        android:layout_height="200dp"
+                        android:layout_height="230dp"
                         android:weightSum="10">
 
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/cereali_offerte"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
+                            android:layout_height="230dp"
                             android:layout_weight="5"
 
                             app:cardElevation="8dp"
@@ -295,7 +295,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_weight="5"
                                         android:autoSizeTextType="uniform"
-                                        android:text="€1,79"
+                                        android:text="€1.79"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -317,7 +317,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/fagioli_offerte"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
+                            android:layout_height="230dp"
                             android:layout_weight="5"
                             app:cardElevation="8dp"
                             app:cardCornerRadius="8dp"
@@ -378,7 +378,7 @@
                                         android:layout_height="match_parent"
                                         android:layout_weight="4.5"
                                         android:autoSizeTextType="uniform"
-                                        android:text="€0,66"
+                                        android:text="€0.66"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -400,14 +400,14 @@
                     </TableRow>
 
                     <TableRow
-                        android:layout_height="200dp"
+                        android:layout_height="230dp"
                         android:weightSum="10">
 
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/melanzana_offerte"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
+                            android:layout_height="230dp"
                             android:layout_weight="5"
                             app:cardElevation="8dp"
                             app:cardCornerRadius="8dp"
@@ -468,7 +468,7 @@
                                         android:layout_height="match_parent"
                                         android:autoSizeTextType="uniform"
                                         android:layout_weight="5"
-                                        android:text="€0,89/kg"
+                                        android:text="€0.89/kg"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -490,7 +490,7 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/vino_offerte"
                             android:layout_width="0dp"
-                            android:layout_height="200dp"
+                            android:layout_height="230dp"
                             android:layout_weight="5"
                             app:cardElevation="8dp"
                             app:cardCornerRadius="8dp"
@@ -551,7 +551,7 @@
                                         android:autoSizeTextType="uniform"
                                         android:layout_height="match_parent"
                                         android:layout_weight="5"
-                                        android:text="€3,99"
+                                        android:text="€3.99"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -571,6 +571,8 @@
 
                         </androidx.cardview.widget.CardView>
                     </TableRow>
+
+                    <!--
 
                     <TableRow
                         android:layout_height="200dp"
@@ -744,6 +746,8 @@
 
                         </androidx.cardview.widget.CardView>
                     </TableRow>
+
+                    -->
 
 
                 </TableLayout>

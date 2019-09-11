@@ -15,11 +15,18 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.mytrueapplication.R;
 import com.example.mytrueapplication.CatergorieSupermercati;
 
-public class SupermercatiFragment extends Fragment {
+public class SupermercatiFragment extends Fragment implements View.OnClickListener{
 
     private SupermercatiViewModel supermercatiViewModel;
     private SearchView mSearchView;
-    private CardView mCardView;
+
+
+    private CardView mCardViewElite;
+    private CardView mCardViewPam;
+    private CardView mCardViewSimply;
+    private CardView mCardViewCarrefour;
+    private CardView mCardViewCoop;
+    private CardView mCardViewConad;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -36,23 +43,81 @@ public class SupermercatiFragment extends Fragment {
             }
         });
          */
+
+
+        //Trovo id e setto listener della card per fare on Click
+
+        mCardViewElite = root.findViewById(R.id.supermercato_elite);
+        mCardViewElite.setOnClickListener(this);
+
+        mCardViewPam = root.findViewById(R.id.supermercato_pam);
+        mCardViewPam.setOnClickListener(this);
+
+        mCardViewSimply = root.findViewById(R.id.supermercato_simply);
+        mCardViewSimply.setOnClickListener(this);
+
+        mCardViewCarrefour = root.findViewById(R.id.supermercato_carrefour);
+        mCardViewCarrefour.setOnClickListener(this);
+
+        mCardViewCoop = root.findViewById(R.id.supermercato_coop);
+        mCardViewCoop.setOnClickListener(this);
+
+        mCardViewConad = root.findViewById(R.id.supermercato_conad);
+        mCardViewConad.setOnClickListener(this);
+
+
         //searchview
         mSearchView = root.findViewById(R.id.search_view);
         mSearchView.setQueryHint("Cerca supermercato");
 
-        //setting new activity from card click
-
-        mCardView = root.findViewById(R.id.elite);
-        mCardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(getContext(), CatergorieSupermercati.class);
-                startActivity(intent);
-            }
-        });
 
         return root;
+
     }
+
+
+
+    @Override
+    public void onClick(View view) {
+
+        switch (view.getId()) {
+
+            case R.id.supermercato_elite:
+                startNewActivity("Elite");
+                break;
+
+            case R.id.supermercato_pam:
+                startNewActivity("Pam");
+                break;
+
+            case R.id.supermercato_simply:
+                startNewActivity("Simply");
+                break;
+
+            case R.id.supermercato_carrefour:
+                startNewActivity("Carrefour");
+                break;
+
+            case R.id.supermercato_coop:
+                startNewActivity("Coop");
+                break;
+
+            case R.id.supermercato_conad:
+                startNewActivity("Conad");
+                break;
+
+            default:
+                break;
+        }
+
+    }
+
+    public void startNewActivity(String supermercatoScelto)
+    {
+        Intent intent = new Intent(getContext(), CatergorieSupermercati.class);
+        intent.putExtra("SupermercatoScelto", supermercatoScelto);
+        startActivity(intent);
+    }
+
 
 }

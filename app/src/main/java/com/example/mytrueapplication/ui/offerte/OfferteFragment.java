@@ -53,7 +53,7 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
 
 
 
-        //Passa all'activity figlia prodotto_generico
+        //Trovo id e setto listener della card per fare on Click
         mCardViewAcqua = root.findViewById(R.id.acqua_offerte);
         mCardViewAcqua.setOnClickListener(this);
 
@@ -72,6 +72,8 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
         mCardViewVino = root.findViewById(R.id.vino_offerte);
         mCardViewVino.setOnClickListener(this);
 
+        /*
+
         mCardViewCroccantini = root.findViewById(R.id.croccantini_offerte);
         mCardViewCroccantini.setOnClickListener(this);
 
@@ -79,10 +81,13 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
         mCardViewTenerone.setOnClickListener(this);
 
 
+         */
 
 
 
 
+
+        //searchview
         mSearchView = root.findViewById(R.id.search_view);
         mSearchView.setQueryHint("Cerca prodotto");
 
@@ -96,77 +101,30 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
         switch (view.getId()) {
 
             case R.id.acqua_offerte:
-                Intent intent_acqua = new Intent(view.getContext(), ProdottoGenerico.class);
-                intent_acqua.putExtra("Supermercato", R.drawable.conad);
-                intent_acqua.putExtra("Immagine", R.drawable.acqua_lete);
-                intent_acqua.putExtra("Titolo", "Acqua minerale naturale Lete");
-                intent_acqua.putExtra("PrezzoVecchio", R.string.prezzoAcqua);
-                intent_acqua.putExtra("PrezzoNuovo", "€1.99");
-                intent_acqua.putExtra("Sconto", R.drawable.sconto20);
-                intent_acqua.putExtra("Descrizione", "Ananas tropicale");
-                startActivity(intent_acqua);
+                createCard(view, R.drawable.conad, R.drawable.acqua_lete, "Acqua minerale naturale Lete", R.string.prezzoAcqua, "€1.99", R.drawable.sconto20, "Ananas tropicale");
                 break;
 
             case R.id.ananas_offerte:
-                Intent intent_ananas = new Intent(view.getContext(), ProdottoGenerico.class);
-                intent_ananas.putExtra("Supermercato", R.drawable.elite);
-                intent_ananas.putExtra("Immagine", R.drawable.ananas);
-                intent_ananas.putExtra("Titolo", "Ananas tropicale");
-                intent_ananas.putExtra("PrezzoVecchio", R.string.prezzoAnanas);
-                intent_ananas.putExtra("PrezzoNuovo", "€0.99");
-                intent_ananas.putExtra("Sconto", R.drawable.sconto50);
-                intent_ananas.putExtra("Descrizione", "Ananas tropicale");
-                startActivity(intent_ananas);
+                createCard(view, R.drawable.elite, R.drawable.ananas, "Ananas tropicale", R.string.prezzoAnanas,"€0.99", R.drawable.sconto50, "Ananas tropicale");
                 break;
 
             case R.id.cereali_offerte:
-                Intent intent_cereali = new Intent(view.getContext(), ProdottoGenerico.class);
-                intent_cereali.putExtra("Supermercato", R.drawable.carrefour);
-                intent_cereali.putExtra("Immagine", R.drawable.cereali);
-                intent_cereali.putExtra("Titolo", "Cereali Cheerios");
-                intent_cereali.putExtra("PrezzoVecchio", R.string.prezzoCereali);
-                intent_cereali.putExtra("PrezzoNuovo", "€1.79");
-                intent_cereali.putExtra("Sconto", R.drawable.sconto40);
-                intent_cereali.putExtra("Descrizione", "Ananas tropicale");
-                startActivity(intent_cereali);
+                createCard(view, R.drawable.carrefour, R.drawable.cereali, "Cereali Cheerios", R.string.prezzoCereali, "€1.79", R.drawable.sconto40, "Ananas tropicale");
                 break;
 
             case R.id.fagioli_offerte:
-                Intent intent_fagioli = new Intent(view.getContext(), ProdottoGenerico.class);
-                intent_fagioli.putExtra("Supermercato", R.drawable.elite);
-                intent_fagioli.putExtra("Immagine", R.drawable.fagioli);
-                intent_fagioli.putExtra("Titolo", "Fagioli in scatola");
-                intent_fagioli.putExtra("PrezzoVecchio", R.string.prezzoFagioli);
-                intent_fagioli.putExtra("PrezzoNuovo", "€0.66");
-                intent_fagioli.putExtra("Sconto", R.drawable.sconto33);
-                intent_fagioli.putExtra("Descrizione", "Ananas tropicale");
-                startActivity(intent_fagioli);
+                createCard(view, R.drawable.elite, R.drawable.fagioli, "Fagioli in scatola", R.string.prezzoFagioli, "€0.66", R.drawable.sconto33, "Ananas tropicale");
                 break;
 
             case R.id.melanzana_offerte:
-                Intent intent_melanzana = new Intent(view.getContext(), ProdottoGenerico.class);
-                intent_melanzana.putExtra("Supermercato", R.drawable.conad);
-                intent_melanzana.putExtra("Immagine", R.drawable.melanzana);
-                intent_melanzana.putExtra("Titolo", "Melanzana");
-                intent_melanzana.putExtra("PrezzoVecchio", R.string.prezzoMelanzana);
-                intent_melanzana.putExtra("PrezzoNuovo", "€0.89/Kg");
-                intent_melanzana.putExtra("Sconto", R.drawable.sconto10);
-                intent_melanzana.putExtra("Descrizione", "Ananas tropicale");
-                startActivity(intent_melanzana);
+                createCard(view, R.drawable.conad, R.drawable.melanzana, "Melanzana", R.string.prezzoMelanzana, "€0.89/Kg", R.drawable.sconto10, "Ananas tropicale");
                 break;
 
             case R.id.vino_offerte:
-                Intent intent_vino = new Intent(view.getContext(), ProdottoGenerico.class);
-                intent_vino.putExtra("Supermercato", R.drawable.carrefour);
-                intent_vino.putExtra("Immagine", R.drawable.vino);
-                intent_vino.putExtra("Titolo", "Vino rosso Chianti D.O.P.");
-                intent_vino.putExtra("PrezzoVecchio", R.string.prezzoVino);
-                intent_vino.putExtra("PrezzoNuovo", "€3.99");
-                intent_vino.putExtra("Sconto", R.drawable.sconto50);
-                intent_vino.putExtra("Descrizione", "Ananas tropicale");
-                startActivity(intent_vino);
+                createCard(view, R.drawable.carrefour, R.drawable.vino, "Vino rosso Chianti D.O.P.", R.string.prezzoVino, "€3.99", R.drawable.sconto50, "Ananas tropicale");
                 break;
 
+            /*
             case R.id.croccantini_offerte:
                 Intent intent_croccantini = new Intent(view.getContext(), ProdottoGenerico.class);
                 intent_croccantini.putExtra("Supermercato", R.drawable.elite);
@@ -191,9 +149,27 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
                 startActivity(intent_tenerone);
                 break;
 
+             */
+
             default:
                 break;
         }
+
+    }
+
+
+
+    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, String descr)
+    {
+        Intent intent = new Intent(view.getContext(), ProdottoGenerico.class);
+        intent.putExtra("Supermercato", imgSup);
+        intent.putExtra("Immagine", imgProd);
+        intent.putExtra("Titolo", titPro);
+        intent.putExtra("PrezzoVecchio", prezzoOld);
+        intent.putExtra("PrezzoNuovo", prezzoNew);
+        intent.putExtra("Sconto", sconto);
+        intent.putExtra("Descrizione", descr);
+        startActivity(intent);
 
     }
 }

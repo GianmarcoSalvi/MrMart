@@ -35,7 +35,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/elite"
+                        android:id="@+id/supermercato_elite"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="8dp"
@@ -103,6 +103,7 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/supermercato_pam"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="8dp"
@@ -170,6 +171,7 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/supermercato_simply"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="8dp"
@@ -236,6 +238,7 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/supermercato_carrefour"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="8dp"
@@ -302,6 +305,7 @@
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/supermercato_coop"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_margin="8dp"
@@ -369,6 +373,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/supermercato_conad"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_margin="8dp"
