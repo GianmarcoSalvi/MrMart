@@ -10,7 +10,7 @@
     <string name="carrello">0.0</string>
 
     <string name="prezzoAcqua"> <strike>€2.49</strike></string>
-    <string name="prezzoAnanas"> <strike>€1.99</strike></string>
+    <string name="prezzoAnanas"> <strike>€1.99/pz</strike></string>
     <string name="prezzoCereali"> <strike>€2.99</strike></string>
     <string name="prezzoFagioli"> <strike>€0.99</strike></string>
     <string name="prezzoVino"> <strike>€7.99</strike></string>

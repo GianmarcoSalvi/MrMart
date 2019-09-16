@@ -21,8 +21,8 @@
         app:showAsAction="always"
         />
     <item
-        android:id="@+id/prezzo1"
-        android:title="€ 0,00"
+        android:id="@+id/prezzo_cart_barra2"
+        android:title="€ 0.00"
 
         android:actionLayout="@layout/cart_price"
         app:showAsAction="always"

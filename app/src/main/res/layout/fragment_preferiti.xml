@@ -59,8 +59,9 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="5"
+                            android:layout_weight="4.5"
                             android:orientation="vertical"
+                            android:layout_margin="10dp"
                             android:weightSum="10">
 
 
@@ -73,8 +74,15 @@
                                 android:layout_margin="3dp"
                                 android:text="Acqua minerale naturale Lete"
                                 android:gravity="center"
-                                android:textSize="16dp">
+                                android:autoSizeTextType="uniform">
                             </TextView>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                            </View>
 
 
                             <ImageView
@@ -85,18 +93,13 @@
                             </ImageView>
 
 
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1">
 
-                            </View>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="2.5"
                             android:weightSum="10"
                             android:orientation="vertical">
 
@@ -107,8 +110,9 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="3"
                                 android:text="@string/prezzoAcqua"
+                                android:maxLines="1"
                                 android:autoSizeTextType="uniform"
-                                android:gravity="center_horizontal">
+                                android:gravity="center">
 
                             </TextView>
 
@@ -117,7 +121,8 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
                                 android:text="€1.99"
-                                android:gravity="center_horizontal"
+                                android:maxLines="1"
+                                android:gravity="center"
                                 android:autoSizeTextType="uniform">
 
                             </TextView>
@@ -127,8 +132,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="3"
-                                android:src="@drawable/sconto20"
-                                android:layout_gravity="fill">
+                                android:src="@drawable/sconto20">
 
                             </ImageView>
 
@@ -163,8 +167,9 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="5"
+                            android:layout_weight="4.5"
                             android:orientation="vertical"
+                            android:layout_margin="10dp"
                             android:weightSum="10">
 
 
@@ -177,8 +182,16 @@
                                 android:text="Banana Chiquita"
                                 android:layout_margin="3dp"
                                 android:gravity="center"
-                                android:textSize="16dp">
+                                android:autoSizeTextType="uniform">
                             </TextView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                            </View>
 
 
                             <ImageView
@@ -188,19 +201,12 @@
                                 android:src="@drawable/elite">
                             </ImageView>
 
-
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1">
-
-                            </View>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="2.5"
                             android:weightSum="10"
                             android:orientation="vertical">
 
@@ -209,15 +215,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="3"
-                                android:src="@drawable/new_label"
-                                android:layout_gravity="fill">
+                                android:src="@drawable/new_label">
 
                             </ImageView>
 
                             <View
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
-                                android:layout_weight="3">
+                                android:layout_weight="1">
                             </View>
 
                             <TextView
@@ -225,10 +230,18 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
                                 android:text="€0.80/kg"
+                                android:maxLines="1"
                                 android:autoSizeTextType="uniform"
-                                android:gravity="center_horizontal">
+                                android:gravity="center">
 
                             </TextView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2">
+                            </View>
 
 
 
@@ -265,7 +278,8 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="5"
+                            android:layout_weight="4.5"
+                            android:layout_margin="10dp"
                             android:orientation="vertical"
                             android:weightSum="10">
 
@@ -276,11 +290,19 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="6"
-                                android:text="Croccantini per cani taglia media"
+                                android:text="Croccantini per cani"
                                 android:layout_margin="3dp"
                                 android:gravity="center"
-                                android:textSize="16dp">
+                                android:autoSizeTextType="uniform">
                             </TextView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                            </View>
 
                             <ImageView
                                 android:layout_width="match_parent"
@@ -290,18 +312,13 @@
                             </ImageView>
 
 
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1">
 
-                            </View>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="2.5"
                             android:weightSum="10"
                             android:orientation="vertical">
 
@@ -312,8 +329,9 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="3"
                                 android:text="@string/prezzoCani"
+                                android:maxLines="1"
                                 android:autoSizeTextType="uniform"
-                                android:gravity="center_horizontal">
+                                android:gravity="center">
 
                             </TextView>
 
@@ -322,7 +340,8 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
                                 android:text="€14.99"
-                                android:gravity="center_horizontal"
+                                android:maxLines="1"
+                                android:gravity="center"
                                 android:autoSizeTextType="uniform">
 
                             </TextView>
@@ -332,8 +351,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="0dp"
                                 android:layout_weight="3"
-                                android:src="@drawable/sconto40"
-                                android:layout_gravity="fill">
+                                android:src="@drawable/sconto40">
 
                             </ImageView>
 
@@ -369,7 +387,8 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="5"
+                            android:layout_weight="4.5"
+                            android:layout_margin="10dp"
                             android:orientation="vertical"
                             android:weightSum="10">
 
@@ -381,8 +400,16 @@
                                 android:text="Detersivo Omino Bianco"
                                 android:gravity="center"
                                 android:layout_margin="3dp"
-                                android:textSize="16dp">
+                                android:autoSizeTextType="uniform">
                             </TextView>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                            </View>
 
 
                             <ImageView
@@ -393,18 +420,13 @@
                             </ImageView>
 
 
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1">
 
-                            </View>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="2.5"
                             android:weightSum="10"
                             android:orientation="vertical">
 
@@ -419,8 +441,9 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
                                 android:text="€3.99"
+                                android:maxLines="1"
                                 android:autoSizeTextType="uniform"
-                                android:gravity="center_horizontal">
+                                android:gravity="center">
 
                             </TextView>
 
@@ -465,7 +488,8 @@
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="5"
+                            android:layout_weight="4.5"
+                            android:layout_margin="10dp"
                             android:orientation="vertical"
                             android:weightSum="10">
 
@@ -477,8 +501,17 @@
                                 android:text="Prosciutto cotto Rovagnati"
                                 android:layout_margin="3dp"
                                 android:gravity="center"
-                                android:textSize="16dp">
+                                android:autoSizeTextType="uniform">
                             </TextView>
+
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                            </View>
 
 
                             <ImageView
@@ -489,18 +522,13 @@
                             </ImageView>
 
 
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1">
 
-                            </View>
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="2"
+                            android:layout_weight="2.5"
                             android:weightSum="10"
                             android:orientation="vertical">
 
@@ -515,8 +543,9 @@
                                 android:layout_height="0dp"
                                 android:layout_weight="4"
                                 android:text="€1.09"
+                                android:maxLines="1"
                                 android:autoSizeTextType="uniform"
-                                android:gravity="center_horizontal">
+                                android:gravity="center">
 
                             </TextView>
 
@@ -539,104 +568,7 @@
                     android:layout_height="1dp"
                     android:background="@android:color/black" />
 
-                <!--
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/uova_preferiti"
-                    android:layout_width="match_parent"
-                    android:layout_height="160dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal"
-                        android:weightSum="10"
-                        android:layout_margin="10dp"
-                        >
 
-                        <ImageView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:src="@drawable/uova"
-                            android:background="@drawable/border_image">
-                        </ImageView>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="5"
-                            android:orientation="vertical"
-                            android:weightSum="10">
-
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="6"
-                                android:text="Uova Bio 6 pz"
-                                android:layout_margin="3dp"
-                                android:gravity="center"
-                                android:textSize="16dp">
-                            </TextView>
-
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="3"
-                                android:src="@drawable/carrefour">
-                            </ImageView>
-
-
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="1">
-
-                            </View>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="2"
-                            android:weightSum="10"
-                            android:orientation="vertical">
-
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="3">
-                            </View>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="4"
-                                android:text="€1,59"
-                                android:autoSizeTextType="uniform"
-                                android:gravity="center_horizontal">
-
-                            </TextView>
-
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="0dp"
-                                android:layout_weight="3">
-                            </View>
-
-
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@android:color/black" />
-                    -->
 
 
 

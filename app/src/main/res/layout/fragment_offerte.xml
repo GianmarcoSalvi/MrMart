@@ -37,6 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+
                     <!--
                         <GridLayout
                             android:rowCount="3"
@@ -69,6 +70,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:weightSum="20"
+                                android:layout_margin="5dp"
                                 android:orientation="vertical">
 
                                 <LinearLayout
@@ -132,7 +134,7 @@
                                     android:layout_weight="4.5"
                                     android:text="Acqua minerale naturale Lete"
                                     android:gravity="center"
-                                    android:layout_marginBottom="4dp"
+                                    android:autoSizeTextType="uniform"
                                     />
                             </LinearLayout>
 
@@ -153,6 +155,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:weightSum="20"
+                                android:layout_margin="5dp"
                                 android:orientation="vertical">
 
                                 <LinearLayout
@@ -204,7 +207,7 @@
                                         android:autoSizeTextType="uniform"
                                         android:layout_height="match_parent"
                                         android:layout_weight="5"
-                                        android:text="€0.99"
+                                        android:text="€0.99/pz"
                                         android:gravity="center"/>
 
                                 </LinearLayout>
@@ -214,9 +217,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="4.5"
-                                    android:text="Ananas tropicale 1 pz."
+                                    android:text="Ananas tropicale"
                                     android:gravity="center"
-                                    android:layout_marginBottom="4dp"
+                                    android:autoSizeTextType="uniform"
                                     />
                             </LinearLayout>
 
@@ -244,6 +247,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:weightSum="20"
+                                android:layout_margin="5dp"
                                 android:orientation="vertical">
 
                                 <LinearLayout
@@ -307,7 +311,7 @@
                                     android:layout_weight="4"
                                     android:text="Cereali Cheerios"
                                     android:gravity="center"
-                                    android:layout_marginBottom="4dp"
+                                    android:autoSizeTextType="uniform"
                                     />
                             </LinearLayout>
 
@@ -327,6 +331,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:weightSum="20"
+                                android:layout_margin="5dp"
                                 android:orientation="vertical">
 
                                 <LinearLayout
@@ -390,7 +395,7 @@
                                     android:layout_weight="4"
                                     android:text="Fagioli in scatola"
                                     android:gravity="center"
-                                    android:layout_marginBottom="4dp"
+                                    android:autoSizeTextType="uniform"
                                     />
                             </LinearLayout>
 
@@ -417,6 +422,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:weightSum="20"
+                                android:layout_margin="5dp"
                                 android:orientation="vertical">
 
                                 <LinearLayout
@@ -478,9 +484,9 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="0dp"
                                     android:layout_weight="4"
-                                    android:text="Melanzana"
+                                    android:text="Melanzana ovale nera"
                                     android:gravity="center"
-                                    android:layout_marginBottom="4dp"
+                                    android:autoSizeTextType="uniform"
                                     />
                             </LinearLayout>
 
@@ -500,6 +506,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:weightSum="20"
+                                android:layout_margin="5dp"
                                 android:orientation="vertical">
 
                                 <LinearLayout
@@ -563,7 +570,7 @@
                                     android:layout_weight="4"
                                     android:text="Vino Rosso Chianti D.O.P"
                                     android:gravity="center"
-                                    android:layout_marginBottom="4dp"
+                                    android:autoSizeTextType="uniform"
                                     />
                             </LinearLayout>
 
@@ -572,182 +579,7 @@
                         </androidx.cardview.widget.CardView>
                     </TableRow>
 
-                    <!--
 
-                    <TableRow
-                        android:layout_height="200dp"
-                        android:weightSum="10">
-
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/croccantini_offerte"
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/elite"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto40"/>
-                                </LinearLayout>
-
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="10"
-                                    android:src="@drawable/cibo_per_cani"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="@string/prezzoCani"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_weight="5"
-                                        android:text="€14,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4.5"
-                                    android:text="Croccantini per cani taglia media"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
-                            </LinearLayout>
-
-
-
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/tenerone_offerte"
-                            android:layout_width="0dp"
-                            android:layout_height="200dp"
-                            android:layout_weight="5"
-                            app:cardElevation="8dp"
-                            app:cardCornerRadius="8dp"
-                            android:layout_margin="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:weightSum="20"
-                                android:orientation="vertical">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="3"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="7"
-                                        android:src="@drawable/carrefour"/>
-
-                                    <ImageView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="3"
-                                        android:src="@drawable/sconto33"/>
-                                </LinearLayout>
-
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="9"
-                                    android:src="@drawable/tenerone"/>
-
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="2.5"
-                                    android:orientation="horizontal"
-                                    android:weightSum="10">
-
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_weight="5"
-                                        android:autoSizeTextType="uniform"
-                                        android:text="@string/prezzoTenerone"
-                                        android:gravity="center"/>
-
-                                    <TextView
-                                        android:layout_width="0dp"
-                                        android:layout_height="match_parent"
-                                        android:autoSizeTextType="uniform"
-                                        android:layout_weight="5"
-                                        android:text="€1,99"
-                                        android:gravity="center"/>
-
-                                </LinearLayout>
-
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="4.5"
-                                    android:text="Teneroni di prosciutto cotto"
-                                    android:gravity="center"
-                                    android:layout_marginBottom="4dp"
-                                    />
-                            </LinearLayout>
-
-
-
-                        </androidx.cardview.widget.CardView>
-                    </TableRow>
-
-                    -->
 
 
                 </TableLayout>

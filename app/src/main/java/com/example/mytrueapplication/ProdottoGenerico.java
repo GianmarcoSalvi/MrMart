@@ -2,20 +2,30 @@ package com.example.mytrueapplication;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.icu.text.DecimalFormat;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
+
+import java.util.ArrayList;
+
+import javax.xml.datatype.Duration;
 
 public class ProdottoGenerico extends AppCompatActivity {
 
@@ -61,6 +71,21 @@ public class ProdottoGenerico extends AppCompatActivity {
     TextView prezzo_nuovo_testo = null;
     String prezzo_singolo_string;
     double prezzo_singolo_double;
+
+    String nomeActivityPrecedente;
+
+
+
+    //aggiunta prodotti con relative quantita al carrello
+    ArrayList<Integer> immaginiAggiunte = new ArrayList<Integer>();
+    ArrayList<String> prodottiAggiunti = new ArrayList<String>();
+    ArrayList<Integer> supermercatiAggiunti = new ArrayList<Integer>();
+    ArrayList<String> prezziAggiunti = new ArrayList<String>();
+    ArrayList<Integer> quantitaAggiunte = new ArrayList<Integer>();
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +133,11 @@ public class ProdottoGenerico extends AppCompatActivity {
         descrizione_card.setText(descrizione_string);
 
 
+        //Serve per impostare stella preferiti gia gialla quando vengo da preferiti
+        nomeActivityPrecedente = getIntent().getStringExtra("ActivityName");
+
+
+
 
         //Gestisco i bottoni + e - e il numero tra essi compreso
 
@@ -153,17 +183,11 @@ public class ProdottoGenerico extends AppCompatActivity {
 
         //Gestisco icona preferiti
         mtoggleButton = (ToggleButton) findViewById(R.id.myStarButton);
-        mtoggleButton.setChecked(false);
-        mtoggleButton.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.star_grey));
-        mtoggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked)
-                    mtoggleButton.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.star_yellow));
-                else
-                    mtoggleButton.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.star_grey));
-            }
-        });
+        if(nomeActivityPrecedente != null && nomeActivityPrecedente.equals("PreferitiFragment"))
+            gestioneStella(true, R.drawable.ic_star_yellow, R.drawable.ic_star_grey, R.drawable.ic_star_yellow);
+
+        else
+            gestioneStella(false, R.drawable.ic_star_grey, R.drawable.ic_star_grey, R.drawable.ic_star_yellow);
 
     }
 
@@ -171,14 +195,19 @@ public class ProdottoGenerico extends AppCompatActivity {
     // crea la nostra top toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.toolbar_prodotto, menu);
+        getMenuInflater().inflate(R.menu.toolbar_princ, menu);
 
 
         //Gestisco il prezzo del carrello al click su aggiungi al carrello
         add_cart = findViewById(R.id.add_cart_button);
-        cart_item = menu.findItem(R.id.prezzo_cart_prodotto);
+        cart_item = menu.findItem(R.id.prezzo_cart);
         prezzo_nuovo_testo = findViewById(R.id.prezzo_nuovo_card);
         prezzo_value_string = (String)prezzo_nuovo_testo.getText();
+
+        if(SingletonPriceCart.getInstance().getValue() != null)
+            cart_item.setTitle(SingletonPriceCart.getInstance().getValue());
+
+
 
 
 
@@ -204,7 +233,36 @@ public class ProdottoGenerico extends AppCompatActivity {
                 else if (cart_item_value_string.length() < 6)
                     cart_item_value_string = cart_item_value_string.concat("0");
 
-                cart_item.setTitle(cart_item_value_string);
+
+
+                //Imposto il prezzo del carrello alla variabile singleton
+                SingletonPriceCart.getInstance().setValue(cart_item_value_string);
+                cart_item.setTitle(SingletonPriceCart.getInstance().getValue());
+
+
+
+
+                //Aggiungo agli array le informazioni necessarie per visualizzare il prodotto nel carrello
+
+
+                //Se il prodotto è gia presente nel carrello, aggiorno la quantita
+                if(prodottiAggiunti.contains(titolo_string))
+                {
+                    int indice = prodottiAggiunti.indexOf(titolo_string);
+                    quantitaAggiunte.set(indice, quantitaAggiunte.get(indice) + num1 );
+                }
+
+                //Altrimenti aggiungo il nuovo prodotto al carrello
+                else {
+                    immaginiAggiunte.add(immagine_prodotto_int);
+                    prodottiAggiunti.add(titolo_string);
+                    supermercatiAggiunti.add(supermercato_int);
+                    prezziAggiunti.add(prezzo_nuovo_string);
+                    quantitaAggiunte.add(num1);
+                }
+
+                Toast.makeText(getApplicationContext(), "Prodotto aggiunto al carrello", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -213,29 +271,55 @@ public class ProdottoGenerico extends AppCompatActivity {
     }
 
 
-    // tasto back nuova activity
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
+        // implemento tasto back
         super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
                 break;
+
+
+            //Gestisco il click sull'item carrello passando all'activity carrello
+            case R.id.carrello_princ:
+                Bundle mBundle = new Bundle();
+                mBundle.putIntegerArrayList("ImmaginiAggiunte", immaginiAggiunte);
+                mBundle.putStringArrayList("ProdottiAggiunti", prodottiAggiunti);
+                mBundle.putIntegerArrayList("SupermercatiAggiunti", supermercatiAggiunti);
+                mBundle.putStringArrayList("PrezziAggiunti", prezziAggiunti);
+                mBundle.putIntegerArrayList("QuantitaAggiunte", quantitaAggiunte);
+                Intent intent = new Intent(this, Carrello.class);
+                intent.putExtras(mBundle);
+                this.startActivity(intent);
+                break;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
         return true;
     }
 
-
-
-    //Rendo il prezzo per il carrello una variabile accessibile da tutte le activity
-    public String getPriceCart()
+    public void gestioneStella(boolean preferito, int attuale, final int drawable1, final int drawable2)
     {
-        return cart_item_value_string;
-    }
+        mtoggleButton.setChecked(preferito);
+        mtoggleButton.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), attuale));
+        mtoggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    mtoggleButton.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), drawable2));
+                    Toast.makeText(getApplicationContext(), "Prodotto aggiunto ai preferiti", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    mtoggleButton.setBackgroundDrawable(ContextCompat.getDrawable(getApplicationContext(), drawable1));
+                    Toast.makeText(getApplicationContext(), "Prodotto rimosso dai preferiti", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
-    public void setPriceCart(String priceCart)
-    {
-        this.cart_item_value_string = priceCart;
     }
+    
 }

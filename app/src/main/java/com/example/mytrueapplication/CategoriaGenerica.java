@@ -1,6 +1,7 @@
 package com.example.mytrueapplication;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -15,6 +16,8 @@ import android.widget.TextView;
 public class CategoriaGenerica extends AppCompatActivity implements View.OnClickListener{
 
 
+    String categoria_scelta;
+    String supermercato_scelto;
 
 
     CardView mCardView1 = null;
@@ -59,6 +62,7 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
     String[] descrizioni;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +73,15 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
         if (extras == null) {
             return;
         }
+
+
+        //Setto la label dell'app bar in base alla categoria scelta
+
+        categoria_scelta = getIntent().getStringExtra("CategoriaScelta");
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(categoria_scelta);
+
+        supermercato_scelto = getIntent().getStringExtra("SupermercatoScelto");
 
         immagini = extras.getIntArray("Immagini");
         titoli = extras.getStringArray("Titoli");
@@ -85,6 +98,69 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
         //Riempie il layout con le informazioni delle cards
         for(int i = 0; i<confine; i++)
         {
+
+            //Cambio la targhetta del supermercato a seconda di quale supermercato avevo scelto in precedenza
+            switch(supermercato_scelto) {
+                case "Elite":
+                    supermercati[i] = R.drawable.elite;
+
+                    if(titoli[0].equals("Ananas Tropicale")) {
+                        prezzi_old[0] = R.string.prezzoAnanas;
+                        prezzi_new[0] = "€0.99/pz";
+                        sconti[0] = R.drawable.sconto50;
+                    }
+
+                    if(titoli[2].equals("Fagioli in scatola")) {
+                        prezzi_old[2] = R.string.prezzoFagioli;
+                        prezzi_new[2] = "€0.66";
+                        sconti[2] = R.drawable.sconto33;
+                    }
+
+                    if(titoli[2].equals("Croccantini per cani")) {
+                        prezzi_old[2] = R.string.prezzoCani;
+                        prezzi_new[2] = "€14.99";
+                        sconti[2] = R.drawable.sconto40;
+                    }
+
+                    break;
+                case "Pam":
+                    supermercati[i] = R.drawable.pam;
+                    break;
+                case "Simply":
+                    supermercati[i] = R.drawable.simply;
+                    break;
+                case "Carrefour":
+                    supermercati[i] = R.drawable.carrefour;
+
+                    if(titoli[0].equals("Cereali Cheerios")) {
+                        prezzi_old[0] = R.string.prezzoCereali;
+                        prezzi_new[0] = "€1.79";
+                        sconti[0] = R.drawable.sconto40;
+                    }
+
+                    break;
+                case "Coop":
+                    supermercati[i] = R.drawable.coop;
+                    break;
+                case "Conad":
+                    supermercati[i] = R.drawable.conad;
+
+                    if(titoli[0].equals("Acqua minerale naturale Lete")) {
+                        prezzi_old[0] = R.string.prezzoAcqua;
+                        prezzi_new[0] = "€1.99";
+                        sconti[0] = R.drawable.sconto20;
+                    }
+
+                    if(titoli[4].equals("Melanzana ovale nera")) {
+                        prezzi_old[4] = R.string.prezzoMelanzana;
+                        prezzi_new[4] = "€0.89/kg";
+                        sconti[4] = R.drawable.sconto10;
+                    }
+
+                    break;
+            }
+
+
             immagine_card = findViewById(idImmagini[i]);
             immagine_card.setImageResource(immagini[i]);
 
@@ -129,16 +205,6 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
 
         findIdAndSetListener(mCardView5, R.id.card_categoria_5);
 
-        /*
-
-        findIdAndSetListener(mCardViewFragole, R.id.fragole_elite);
-
-        findIdAndSetListener(mCardViewKiwi, R.id.kiwi_elite);
-
-        findIdAndSetListener(mCardViewLimone, R.id.limone_elite);
-
-
-         */
 
 
     }
@@ -169,22 +235,6 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
                 createCard(view, supermercati[4], immagini[4], titoli[4], prezzi_old[4], prezzi_new[4], sconti[4], descrizioni[4]);
                 break;
 
-                /*
-
-            case R.id.fragole_elite:
-                createCard(view, R.drawable.elite, R.drawable.fragole, "Fragole Melinda", -1, "€4.99/kg", -1, "Ananas tropicale" );
-                break;
-
-            case R.id.kiwi_elite:
-                createCard(view, R.drawable.elite, R.drawable.kiwi, "Kiwi", -1, "€2.99/kg", -1, "Descrizione kiwi");
-                break;
-
-            case R.id.limone_elite:
-                createCard(view, R.drawable.elite, R.drawable.limone,"Limone", -1,"€0.99/kg", -1, "Ananas tropicale");
-                break;
-
-
-                 */
 
             default:
                 break;
@@ -197,6 +247,12 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.ricerca_cart_prezzo, menu);
+
+        //Imposto il prezzo del carrello alla variabile singleton
+        MenuItem price_cart = menu.findItem(R.id.prezzo_cart_barra2);
+        if(SingletonPriceCart.getInstance().getValue() != null)
+        price_cart.setTitle(SingletonPriceCart.getInstance().getValue());
+
         return true;
     }
 

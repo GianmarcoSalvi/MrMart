@@ -32,7 +32,7 @@
             android:id="@+id/immagine_prodotto_card"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:src="@drawable/banana">
@@ -118,14 +118,8 @@
         </TextView>
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-
-        </View>
-
     </LinearLayout>
+
 
 
     //Toolbar_inferiore_prodotto

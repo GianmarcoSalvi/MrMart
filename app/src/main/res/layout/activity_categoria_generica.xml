@@ -44,7 +44,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
+                        android:layout_weight="4.5"
+                        android:layout_margin="10dp"
                         android:orientation="vertical"
                         android:weightSum="10">
 
@@ -59,8 +60,16 @@
                             android:layout_margin="3dp"
                             android:text="Ananas tropicale"
                             android:gravity="center"
-                            android:textSize="16dp">
+                            android:autoSizeTextType="uniform">
                         </TextView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </View>
 
 
                         <ImageView
@@ -72,18 +81,13 @@
                         </ImageView>
 
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
 
-                        </View>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_weight="2.5"
                         android:weightSum="10"
                         android:orientation="vertical">
 
@@ -96,7 +100,7 @@
                             android:layout_weight="3"
                             android:text=""
                             android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
+                            android:gravity="center">
 
                         </TextView>
 
@@ -106,7 +110,8 @@
                             android:layout_height="0dp"
                             android:layout_weight="4"
                             android:text="€0.99"
-                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:gravity="center"
                             android:autoSizeTextType="uniform">
 
                         </TextView>
@@ -116,8 +121,7 @@
                             android:id="@+id/sconto_card_categoria_1"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:layout_gravity="fill">
+                            android:layout_weight="3">
 
                         </ImageView>
 
@@ -154,7 +158,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
+                        android:layout_weight="4.5"
+                        android:layout_margin="10dp"
                         android:orientation="vertical"
                         android:weightSum="10">
 
@@ -169,8 +174,15 @@
                             android:layout_margin="3dp"
                             android:text="Ananas tropicale"
                             android:gravity="center"
-                            android:textSize="16dp">
+                            android:autoSizeTextType="uniform">
                         </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </View>
 
 
                         <ImageView
@@ -181,19 +193,12 @@
                             android:src="@drawable/elite">
                         </ImageView>
 
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
-
-                        </View>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_weight="2.5"
                         android:weightSum="10"
                         android:orientation="vertical">
 
@@ -206,7 +211,7 @@
                             android:layout_weight="3"
                             android:text=""
                             android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
+                            android:gravity="center">
 
                         </TextView>
 
@@ -216,7 +221,8 @@
                             android:layout_height="0dp"
                             android:layout_weight="4"
                             android:text="€0.99"
-                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:gravity="center"
                             android:autoSizeTextType="uniform">
 
                         </TextView>
@@ -226,8 +232,7 @@
                             android:id="@+id/sconto_card_categoria_2"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:layout_gravity="fill">
+                            android:layout_weight="3">
 
                         </ImageView>
 
@@ -264,7 +269,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
+                        android:layout_weight="4.5"
+                        android:layout_margin="10dp"
                         android:orientation="vertical"
                         android:weightSum="10">
 
@@ -279,8 +285,16 @@
                             android:layout_margin="3dp"
                             android:text="Ananas tropicale"
                             android:gravity="center"
-                            android:textSize="16dp">
+                            android:autoSizeTextType="uniform">
                         </TextView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </View>
 
 
                         <ImageView
@@ -292,18 +306,13 @@
                         </ImageView>
 
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
 
-                        </View>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_weight="2.5"
                         android:weightSum="10"
                         android:orientation="vertical">
 
@@ -316,7 +325,7 @@
                             android:layout_weight="3"
                             android:text=""
                             android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
+                            android:gravity="center">
 
                         </TextView>
 
@@ -326,7 +335,8 @@
                             android:layout_height="0dp"
                             android:layout_weight="4"
                             android:text="€0.99"
-                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:gravity="center"
                             android:autoSizeTextType="uniform">
 
                         </TextView>
@@ -336,8 +346,7 @@
                             android:id="@+id/sconto_card_categoria_3"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:layout_gravity="fill">
+                            android:layout_weight="3">
 
                         </ImageView>
 
@@ -374,7 +383,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
+                        android:layout_weight="4.5"
+                        android:layout_margin="10dp"
                         android:orientation="vertical"
                         android:weightSum="10">
 
@@ -389,8 +399,15 @@
                             android:layout_margin="3dp"
                             android:text="Ananas tropicale"
                             android:gravity="center"
-                            android:textSize="16dp">
+                            android:autoSizeTextType="uniform">
                         </TextView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </View>
 
 
                         <ImageView
@@ -402,18 +419,13 @@
                         </ImageView>
 
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
 
-                        </View>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_weight="2.5"
                         android:weightSum="10"
                         android:orientation="vertical">
 
@@ -426,7 +438,7 @@
                             android:layout_weight="3"
                             android:text=""
                             android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
+                            android:gravity="center">
 
                         </TextView>
 
@@ -436,7 +448,8 @@
                             android:layout_height="0dp"
                             android:layout_weight="4"
                             android:text="€0.99"
-                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:gravity="center"
                             android:autoSizeTextType="uniform">
 
                         </TextView>
@@ -446,8 +459,7 @@
                             android:id="@+id/sconto_card_categoria_4"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:layout_gravity="fill">
+                            android:layout_weight="3">
 
                         </ImageView>
 
@@ -484,7 +496,8 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="5"
+                        android:layout_weight="4.5"
+                        android:layout_margin="10dp"
                         android:orientation="vertical"
                         android:weightSum="10">
 
@@ -499,8 +512,16 @@
                             android:layout_margin="3dp"
                             android:text="Ananas tropicale"
                             android:gravity="center"
-                            android:textSize="16dp">
+                            android:autoSizeTextType="uniform">
                         </TextView>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </View>
 
 
                         <ImageView
@@ -512,18 +533,13 @@
                         </ImageView>
 
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
 
-                        </View>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="2"
+                        android:layout_weight="2.5"
                         android:weightSum="10"
                         android:orientation="vertical">
 
@@ -536,7 +552,7 @@
                             android:layout_weight="3"
                             android:text=""
                             android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
+                            android:gravity="center">
 
                         </TextView>
 
@@ -546,7 +562,8 @@
                             android:layout_height="0dp"
                             android:layout_weight="4"
                             android:text="€0.99"
-                            android:gravity="center_horizontal"
+                            android:maxLines="1"
+                            android:gravity="center"
                             android:autoSizeTextType="uniform">
 
                         </TextView>
@@ -556,8 +573,7 @@
                             android:id="@+id/sconto_card_categoria_5"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:layout_gravity="fill">
+                            android:layout_weight="3">
 
                         </ImageView>
 
@@ -571,298 +587,6 @@
                 android:layout_height="1dp"
                 android:background="@android:color/black" />
 
-
-            <!--
-            <androidx.cardview.widget.CardView
-                android:id="@+id/fragole_elite"
-                android:layout_width="match_parent"
-                android:layout_height="160dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="10"
-                    android:layout_margin="10dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:src="@drawable/fragole"
-                        android:background="@drawable/border_image">
-                    </ImageView>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:orientation="vertical"
-                        android:weightSum="10">
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="6"
-                            android:text="Fragole melinda"
-                            android:gravity="center"
-                            android:layout_margin="3dp"
-                            android:textSize="16dp">
-                        </TextView>
-
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:src="@drawable/elite">
-                        </ImageView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
-
-                        </View>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:weightSum="10"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€4,99/kg"
-                            android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
-
-                        </TextView>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
-
-
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/black" />
-            <androidx.cardview.widget.CardView
-                android:id="@+id/kiwi_elite"
-                android:layout_width="match_parent"
-                android:layout_height="160dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="10"
-                    android:layout_margin="10dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:src="@drawable/kiwi"
-                        android:background="@drawable/border_image">
-                    </ImageView>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:orientation="vertical"
-                        android:weightSum="10">
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="6"
-                            android:text="Kiwi"
-                            android:gravity="center"
-                            android:layout_margin="3dp"
-                            android:textSize="16dp">
-                        </TextView>
-
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:src="@drawable/elite">
-                        </ImageView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
-
-                        </View>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:weightSum="10"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€2,99/kg"
-                            android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
-
-                        </TextView>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
-
-
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/black" />
-            <androidx.cardview.widget.CardView
-                android:id="@+id/limone_elite"
-                android:layout_width="match_parent"
-                android:layout_height="160dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:weightSum="10"
-                    android:layout_margin="10dp"
-                    >
-
-                    <ImageView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="3"
-                        android:src="@drawable/limone"
-                        android:background="@drawable/border_image">
-                    </ImageView>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="5"
-                        android:orientation="vertical"
-                        android:weightSum="10">
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="6"
-                            android:text="Limone"
-                            android:gravity="center"
-                            android:layout_margin="3dp"
-                            android:textSize="16dp">
-                        </TextView>
-
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3"
-                            android:src="@drawable/elite">
-                        </ImageView>
-
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="1">
-
-                        </View>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="2"
-                        android:weightSum="10"
-                        android:orientation="vertical">
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="4"
-                            android:text="€0,99/kg"
-                            android:autoSizeTextType="uniform"
-                            android:gravity="center_horizontal">
-
-                        </TextView>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_weight="3">
-                        </View>
-
-
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@android:color/black" />
-
-                -->
 
         </LinearLayout>
 

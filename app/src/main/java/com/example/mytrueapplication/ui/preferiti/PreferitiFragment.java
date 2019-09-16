@@ -30,7 +30,6 @@ public class PreferitiFragment extends Fragment implements View.OnClickListener{
     CardView mCardViewCroccantini = null;
     CardView mCardViewDetersivo = null;
     CardView mCardViewProsciuttoCotto = null;
-    CardView mCardViewUova = null;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -66,12 +65,6 @@ public class PreferitiFragment extends Fragment implements View.OnClickListener{
         mCardViewProsciuttoCotto = root.findViewById(R.id.prosciutto_cotto_preferiti);
         mCardViewProsciuttoCotto.setOnClickListener(this);
 
-        /*
-
-        mCardViewUova = root.findViewById(R.id.uova_preferiti);
-        mCardViewUova.setOnClickListener(this);
-
-         */
 
 
 
@@ -112,14 +105,6 @@ public class PreferitiFragment extends Fragment implements View.OnClickListener{
                 break;
 
 
-            /*
-            case R.id.uova_preferiti:
-                createCard(view, R.drawable.carrefour, R.drawable.uova, "Uova bio 6 pz", -1, "€1.59", -1, "Ananas tropicale");
-                break;
-
-
-             */
-
 
             default:
                 break;
@@ -139,6 +124,8 @@ public class PreferitiFragment extends Fragment implements View.OnClickListener{
         intent.putExtra("PrezzoNuovo", prezzoNew);
         intent.putExtra("Sconto", sconto);
         intent.putExtra("Descrizione", descr);
+
+        intent.putExtra("ActivityName", "PreferitiFragment");
         startActivity(intent);
 
     }

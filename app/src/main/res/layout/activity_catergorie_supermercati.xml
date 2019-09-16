@@ -14,7 +14,7 @@
         android:rowCount="4">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/frutta_elite"
+            android:id="@+id/frutta_card"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
@@ -34,44 +34,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
-            android:layout_height="0dp"
-            android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            android:layout_margin="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/igiene_sfondo">
-            </LinearLayout>
-
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_height="0dp"
-            android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp"
-            android:layout_margin="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@drawable/scatole_sfondo">
-            </LinearLayout>
-
-
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
+            android:id="@+id/verdura_card"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
@@ -91,6 +54,7 @@
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/salumi_formaggi_card"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
@@ -103,13 +67,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/latte_sfondo">
+                android:background="@drawable/salumi_e_formaggi_sfondo">
             </LinearLayout>
 
 
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/alimentari_card"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
@@ -122,13 +87,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/surgelati_sfondo">
+                android:background="@drawable/alimentari_sfondo">
             </LinearLayout>
 
 
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/bevande_card"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
@@ -141,13 +107,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/pane_sfondo">
+                android:background="@drawable/bevande_sfondo">
             </LinearLayout>
 
 
 
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
+            android:id="@+id/prodotti_casa_card"
             android:layout_height="0dp"
             android:layout_width="0dp"
             android:layout_columnWeight="1"
@@ -160,7 +127,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:background="@drawable/pesce_sfondo">
+                android:background="@drawable/prodotti_casa_sfondo">
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/igiene_personale_card"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/igiene_personale_sfondo">
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/altro_card"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/altro_sfondo">
             </LinearLayout>
 
 

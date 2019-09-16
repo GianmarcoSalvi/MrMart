@@ -28,18 +28,19 @@
                 android:layout_weight="8"
                 android:background="@drawable/round_searchbar"
                 android:iconifiedByDefault="false"
+                android:queryBackground="@color/myTransparent"
                 android:queryHint="Cerca prodotto" />
 
             <View
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="0.5" />
 
             <ImageButton
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1.5"
-                android:background="@drawable/round_searchbar"
+                android:background="@drawable/round_filters"
                 android:layout_marginBottom="16dp"
                 android:layout_marginRight="16dp"
                 android:src="@drawable/ic_filters" />
