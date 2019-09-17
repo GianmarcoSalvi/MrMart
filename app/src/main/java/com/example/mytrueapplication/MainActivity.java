@@ -145,10 +145,16 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.toolbar_princ, menu);
 
+
+        /*
+
         //Imposto il prezzo del carrello alla variabile singleton
         MenuItem price_cart = menu.findItem(R.id.prezzo_cart);
         if(SingletonPriceCart.getInstance().getValue() != null)
         price_cart.setTitle(SingletonPriceCart.getInstance().getValue());
+
+
+         */
 
 
         return true;

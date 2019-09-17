@@ -185,10 +185,16 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.ricerca_cart_prezzo, menu);
 
+        /*
+
         //Imposto il prezzo del carrello alla variabile singleton
         MenuItem price_cart = menu.findItem(R.id.prezzo_cart_barra2);
         if(SingletonPriceCart.getInstance().getValue() != null)
         price_cart.setTitle(SingletonPriceCart.getInstance().getValue());
+
+
+         */
+
         return true;
     }
 

@@ -234,10 +234,15 @@ public class ProdottoGenerico extends AppCompatActivity {
                     cart_item_value_string = cart_item_value_string.concat("0");
 
 
+                /*
 
                 //Imposto il prezzo del carrello alla variabile singleton
                 SingletonPriceCart.getInstance().setValue(cart_item_value_string);
                 cart_item.setTitle(SingletonPriceCart.getInstance().getValue());
+
+                 */
+
+                cart_item.setTitle(cart_item_value_string);
 
 
 
@@ -283,6 +288,7 @@ public class ProdottoGenerico extends AppCompatActivity {
                 break;
 
 
+                /*
             //Gestisco il click sull'item carrello passando all'activity carrello
             case R.id.carrello_princ:
                 Bundle mBundle = new Bundle();
@@ -295,6 +301,8 @@ public class ProdottoGenerico extends AppCompatActivity {
                 intent.putExtras(mBundle);
                 this.startActivity(intent);
                 break;
+
+                 */
 
             default:
                 return super.onOptionsItemSelected(item);
