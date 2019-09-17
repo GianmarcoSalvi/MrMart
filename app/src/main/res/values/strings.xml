@@ -26,5 +26,57 @@
     <string name="consegnaSimply">€3.50</string>
     <string name="consegnaCoop">€2.00</string>
     <string name="consegnaPam">€5.00</string>
+    
+    <string name="descrizioneAnanas">Ananas di origine brasiliana dal gusto dolce e intenso</string>
+    <string name="descrizioneArancia">Arancia sanguinello di Sicilia, ottima da spremere ma buona anche da mangiare</string>
+    <string name="descrizioneBanana">Banana Chiuquita di origine colombiana</string>
+    <string name="descrizioneBergamotto">Bergamotto fresco di Calabria</string>
+    <string name="descrizioneCocomero">Cocomero fresco di Latina</string>
+
+    <string name="descrizioneCavolo"></string>
+    <string name="descrizioneFagiolini"></string>
+    <string name="descrizioneFinocchio"></string>
+    <string name="descrizioneLattuga"></string>
+    <string name="descrizioneMelanzana"></string>
+
+    <string name="descrizioneBresaola">Bresaola di manzo tagliata sottile Rovagnati 100g</string>
+    <string name="descrizioneMortadella">Mortadella Rovagnati di puro suino 100g</string>
+    <string name="descrizioneMozzarella">Mozzarella di bufuala campana D.O.P Vallelata 300g</string>
+    <string name="descrizioneParmigiano">Parmigiano Reggiano di montagna grattuggiato fresco 150g</string>
+    <string name="descrizioneProsciutto">Prosciutto cotto di alta qualità Rovagnati 100g</string>
+
+    <string name="descrizioneCereali">Cereali al miele ideali per la prima colazione 375g</string>
+    <string name="descrizioneCotoletta">Delicata e tenera cotoletta con filetti di pollo 300g</string>
+    <string name="descrizioneFagioli">Fagioli Cannellini sani e mediterranei 500g</string>
+    <string name="descrizioneNutella">Crema dolce spalmabile al cioccolato e alle nocciole 375g</string>
+    <string name="descrizionePasta">Fusilli Barilla 500g</string>
+
+    <string name="descrizioneAcqua"></string>
+    <string name="descrizioneAmaro">Amaro dal gusto speziato e delicato, prodotto a Bologna dal 1885</string>
+    <string name="descrizioneCoca">Coca Cola in lattina 330ml</string>
+    <string name="descrizioneFanta">Aranciata Fanta in bottiglia 1,5l</string>
+    <string name="descrizioneLatte">Latte fresco della centrale del latte di Roma 1l</string>
+
+    <string name="descrizioneCarta">Pacco formato famiglia contenente 4 rotoli</string>
+    <string name="descrizioneDetersivo">Detersivo Omino Bianco per tessuti colorati al profumo di lavanda</string>
+    <string name="descrizioneFazzoletti">12 pacchetti di fazzoletti a 4 strati Tempo</string>
+    <string name="descrizionePellicola">Pellicola da forno Cuki 20m, indicata per le alte temperature del forno e per il microonde</string>
+    <string name="descrizioneSpugna">Spugna Spontex 6 pezzi</string>
+
+    <string name="descrizioneDentifricio">Dentifricio al sapore di menta extra strong</string>
+    <string name="descrizioneDeodorante">Deodorante spray extra fresh per uomo che garantisce fino a 48h do freschezza e non lascia macchie sui tuoi capi</string>
+    <string name="descrizioneLamette">Lamette Gilette formato convenienza 4 + 2 in regalo</string>
+    <string name="descrizioneSapone">Sapone intimo fresco e delicato all\'essenza di vaniglia 100ml</string>
+    <string name="descrizioneShampoo">Shampoo Garnier Ultra Dolce con olio di mandorle e estratti di linfa di Acero 200ml</string>
+
+    <string name="descrizioneBatterie">4 Batterie Duracell formato AA4 (Stilo)</string>
+    <string name="descrizioneGatti">Cibo per gatti adulti in formato convenienza 10kg</string>
+    <string name="descrizioneCani">Croccantini di pollo e verdure per cani 10kg</string>
+    <string name="descrizionePannolini">25 pannolini Pampers con formula baby-dry</string>
+    <string name="descrizioneZanzare">Spray antizanzare Autan 50ml</string>
+
+
+
+    
 
 </resources>

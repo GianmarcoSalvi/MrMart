@@ -59,7 +59,7 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
     int[] prezzi_old;
     String[] prezzi_new;
     int[] sconti;
-    String[] descrizioni;
+    int[] descrizioni;
 
 
 
@@ -89,7 +89,7 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
         prezzi_old = extras.getIntArray("PrezziOld");
         prezzi_new = extras.getStringArray("PrezziNew");
         sconti = extras.getIntArray("Sconti");
-        descrizioni = extras.getStringArray("Descrizioni");
+        descrizioni = extras.getIntArray("Descrizioni");
 
 
         int confine = immagini.length;  //confine varia a seconda di quante card ho nel layout
@@ -282,7 +282,7 @@ public class CategoriaGenerica extends AppCompatActivity implements View.OnClick
         card.setOnClickListener(this);
     }
 
-    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, String descr)
+    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, int descr)
     {
         Intent intent = new Intent(view.getContext(), ProdottoGenerico.class);
         intent.putExtra("Supermercato", imgSup);

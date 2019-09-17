@@ -30,13 +30,16 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
 
 
 
+    // FRUTTA
+
     int[] immagini_frutta_elite = {R.drawable.ananas, R.drawable.arancia, R.drawable.banana, R.drawable.bergamotto, R.drawable.cocomero};
     String[] titoli_frutta_elite = {"Ananas Tropicale", "Arancia Sanguinello", "Banana Chiquita", "Bergamotto calabrese", "Cocomero"};
     int[] supermercati_frutta_elite = {R.drawable.elite, R.drawable.elite, R.drawable.elite, R.drawable.elite, R.drawable.elite};
     int[] prezzi_old_frutta_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_frutta_elite = {"€0.99/pz", "€0.45/kg", "€0.80/kg", "€3.99/kg", "€2.90/pz"};
     int[] sconti_frutta_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_frutta_elite = {"d1", "d2", "d3", "d4", "d5"};
+    int[] descrizioni_frutta_elite = {R.string.descrizioneAnanas, R.string.descrizioneArancia, R.string.descrizioneBanana, R.string.descrizioneBergamotto, R.string.descrizioneCocomero};
+
 
 
 
@@ -46,7 +49,8 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_verdura_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_verdura_elite = {"€0.75/kg", "€1.19/kg", "€0.39/kg", "€0.50/kg", "€0.99/kg"};
     int[] sconti_verdura_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_verdura_elite = {"d1", "d2", "d3", "d4", "d5"};
+    int[] descrizioni_verdura_elite = {R.string.descrizioneCavolo, R.string.descrizioneFagiolini, R.string.descrizioneFinocchio, R.string.descrizioneLattuga, R.string.descrizioneMelanzana};
+
 
 
     int[] immagini_salumi_formaggi_elite = {R.drawable.bresaola_negroni, R.drawable.mortadella_rovagnati, R.drawable.mozzarella, R.drawable.parmigiano_ferrari, R.drawable.prosciutto_cotto};
@@ -55,7 +59,8 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_salumi_formaggi_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_salumi_formaggi_elite = {"€2.49", "€2.79", "€4.19", "€2.99", "€1.09"};
     int[] sconti_salumi_formaggi_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_salumi_formaggi_elite = {"d1", "d2", "d3", "d4", "d5"};
+    int[] descrizioni_salumi_formaggi_elite = {R.string.descrizioneBresaola, R.string.descrizioneMortadella, R.string.descrizioneMozzarella, R.string.descrizioneParmigiano, R.string.descrizioneProsciutto};
+
 
 
 
@@ -65,7 +70,8 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_alimentari_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_alimentari_elite = {"€2.99", "€3.90", "€0.66", "€3.29", "€2.30"};
     int[] sconti_alimentari_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_alimentari_elite = {"d1", "d2", "d3", "d4", "d5"};
+    int[] descrizioni_alimentari_elite = {R.string.descrizioneCereali, R.string.descrizioneCotoletta, R.string.descrizioneFagioli, R.string.descrizioneNutella, R.string.descrizionePasta};
+
 
 
     int[] immagini_bevande_elite = {R.drawable.acqua_lete, R.drawable.amaro_montenegro, R.drawable.coca_cola, R.drawable.fanta, R.drawable.latte_centrale};
@@ -74,8 +80,7 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_bevande_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_bevande_elite = {"€2.49", "€14.50", "€0.69", "€1.50", "€1.10"};
     int[] sconti_bevande_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_bevande_elite = {"d1", "d2", "d3", "d4", "d5"};
-
+    int[] descrizioni_bevande_elite = {R.string.descrizioneAcqua, R.string.descrizioneAmaro, R.string.descrizioneCoca, R.string.descrizioneFanta, R.string.descrizioneLatte};
 
 
     int[] immagini_prodotti_casa_elite = {R.drawable.carta_igienica_regina, R.drawable.omino_bianco, R.drawable.fazzoletti_tempo, R.drawable.pellicola_forno_cuki, R.drawable.spugna_piatti_spontex};
@@ -84,7 +89,8 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_prodotti_casa_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_prodotti_casa_elite = {"€2.90", "€3.99", "€1.49", "€1.09", "€1.90"};
     int[] sconti_prodotti_casa_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_prodotti_casa_elite = {"d1", "d2", "d3", "d4", "d5"};
+    int[] descrizioni_prodotti_casa_elite = {R.string.descrizioneCarta, R.string.descrizioneDetersivo, R.string.descrizioneFazzoletti, R.string.descrizionePellicola, R.string.descrizioneSpugna};
+
 
 
 
@@ -94,8 +100,7 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_igiene_personale_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_igiene_personale_elite = {"€0.99", "€1.89", "€3.49", "€1.65", "€3.09"};
     int[] sconti_igiene_personale_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_igiene_personale_elite = {"d1", "d2", "d3", "d4", "d5"};
-
+    int[] descrizioni_igiene_personale_elite = {R.string.descrizioneDentifricio, R.string.descrizioneDeodorante, R.string.descrizioneLamette, R.string.descrizioneSapone, R.string.descrizioneShampoo};
 
 
     int[] immagini_altro_elite = {R.drawable.batterie_duracell, R.drawable.cibo_gatti_yarrah, R.drawable.cibo_per_cani, R.drawable.pannolini_pampers, R.drawable.spray_autan};
@@ -104,7 +109,7 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     int[] prezzi_old_altro_elite = {-1, -1, -1, -1, -1};
     String[] prezzi_new_altro_elite = {"€7.90", "€32.39", "€14.99", "€9.70", "€4.49"};
     int[] sconti_altro_elite = {-1, -1 , -1, -1, -1};
-    String[] descrizioni_altro_elite = {"d1", "d2", "d3", "d4", "d5"};
+    int[] descrizioni_altro_elite = {R.string.descrizioneBatterie, R.string.descrizioneGatti, R.string.descrizioneCani, R.string.descrizionePannolini, R.string.descrizioneZanzare};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -221,7 +226,7 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
     }
 
 
-    public void createLayoutCategoria(View view, int[] immagini, String[] titoli, int[] nomi_sup, int[] prezzi_old, String[] prezzi_new, int[] sconti, String[] descrizioni, String categoriaScelta)
+    public void createLayoutCategoria(View view, int[] immagini, String[] titoli, int[] nomi_sup, int[] prezzi_old, String[] prezzi_new, int[] sconti, int[] descrizioni, String categoriaScelta)
     {
         Bundle mBundle = new Bundle();
         mBundle.putIntArray("Immagini", immagini);
@@ -230,7 +235,7 @@ public class CatergorieSupermercati extends AppCompatActivity implements View.On
         mBundle.putIntArray("PrezziOld", prezzi_old);
         mBundle.putStringArray("PrezziNew", prezzi_new);
         mBundle.putIntArray("Sconti", sconti);
-        mBundle.putStringArray("Descrizioni", descrizioni);
+        mBundle.putIntArray("Descrizioni", descrizioni);
         Intent intent = new Intent(view.getContext(), CategoriaGenerica.class);
         intent.putExtras(mBundle);
         intent.putExtra("CategoriaScelta", categoriaScelta);

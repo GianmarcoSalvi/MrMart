@@ -47,7 +47,7 @@ public class ProdottoGenerico extends AppCompatActivity {
     int sconto_int;
     ImageView sconto_card = null;
 
-    String descrizione_string;
+    int descrizione_string;
     TextView descrizione_card = null;
 
 
@@ -128,7 +128,7 @@ public class ProdottoGenerico extends AppCompatActivity {
             sconto_card.setImageResource(sconto_int);
         }
 
-        descrizione_string = getIntent().getStringExtra("Descrizione");
+        descrizione_string = getIntent().getIntExtra("Descrizione", -1);
         descrizione_card = findViewById(R.id.descrizione_card);
         descrizione_card.setText(descrizione_string);
 
