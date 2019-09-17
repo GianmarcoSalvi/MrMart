@@ -321,5 +321,5 @@ public class ProdottoGenerico extends AppCompatActivity {
         });
 
     }
-    
+
 }
