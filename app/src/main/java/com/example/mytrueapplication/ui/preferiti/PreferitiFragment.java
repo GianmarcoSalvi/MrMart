@@ -85,23 +85,23 @@ public class PreferitiFragment extends Fragment implements View.OnClickListener{
         switch (view.getId()) {
 
             case R.id.acqua_preferiti:
-                createCard(view, R.drawable.conad, R.drawable.acqua_lete, "Acqua minerale naturale Lete", R.string.prezzoAcqua, "€1.99", R.drawable.sconto20, "Ananas tropicale");
+                createCard(view, R.drawable.conad, R.drawable.acqua_lete, "Acqua minerale naturale Lete", R.string.prezzoAcqua, "€1.99", R.drawable.sconto20,  R.string.descrizioneAcqua);
                 break;
 
             case R.id.banana_preferiti:
-                createCard(view, R.drawable.elite, R.drawable.banana, "Banana Chiquita", -1, "€0.80/kg", -1, "Ananas tropicale");
+                createCard(view, R.drawable.elite, R.drawable.banana, "Banana Chiquita", -1, "€0.80/kg", -1,  R.string.descrizioneBanana);
                 break;
 
             case R.id.croccantini_preferiti:
-                createCard(view, R.drawable.elite, R.drawable.cibo_per_cani,"Croccantini per cani", R.string.prezzoCani, "€14.99", R.drawable.sconto40, "Ananas tropicale");
+                createCard(view, R.drawable.elite, R.drawable.cibo_per_cani,"Croccantini per cani", R.string.prezzoCani, "€14.99", R.drawable.sconto40, R.string.descrizioneCani);
                 break;
 
             case R.id.detersivo_preferiti:
-                createCard(view, R.drawable.pam, R.drawable.omino_bianco, "Detersivo Omino Bianco", -1,"€3.99", -1, "Ananas tropicale");
+                createCard(view, R.drawable.pam, R.drawable.omino_bianco, "Detersivo Omino Bianco", -1,"€3.99", -1, R.string.descrizioneDetersivo);
                 break;
 
             case R.id.prosciutto_cotto_preferiti:
-                createCard(view, R.drawable.coop, R.drawable.prosciutto_cotto, "Prosciutto cotto Rovagnati", -1, "€1.09", -1, "Ananas tropicale");
+                createCard(view, R.drawable.coop, R.drawable.prosciutto_cotto, "Prosciutto cotto Rovagnati", -1, "€1.09", -1, R.string.descrizioneProsciutto);
                 break;
 
 
@@ -114,7 +114,7 @@ public class PreferitiFragment extends Fragment implements View.OnClickListener{
 
 
 
-    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, String descr)
+    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, int descr)
     {
         Intent intent = new Intent(view.getContext(), ProdottoGenerico.class);
         intent.putExtra("Supermercato", imgSup);

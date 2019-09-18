@@ -92,27 +92,27 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
         switch (view.getId()) {
 
             case R.id.acqua_offerte:
-                createCard(view, R.drawable.conad, R.drawable.acqua_lete, "Acqua minerale naturale Lete", R.string.prezzoAcqua, "€1.99", R.drawable.sconto20, "Ananas tropicale");
+                createCard(view, R.drawable.conad, R.drawable.acqua_lete, "Acqua minerale naturale Lete", R.string.prezzoAcqua, "€1.99", R.drawable.sconto20, R.string.descrizioneAcqua);
                 break;
 
             case R.id.ananas_offerte:
-                createCard(view, R.drawable.elite, R.drawable.ananas, "Ananas tropicale", R.string.prezzoAnanas,"€0.99/pz", R.drawable.sconto50, "Ananas tropicale");
+                createCard(view, R.drawable.elite, R.drawable.ananas, "Ananas tropicale", R.string.prezzoAnanas,"€0.99/pz", R.drawable.sconto50,  R.string.descrizioneAnanas);
                 break;
 
             case R.id.cereali_offerte:
-                createCard(view, R.drawable.carrefour, R.drawable.cereali, "Cereali Cheerios", R.string.prezzoCereali, "€1.79", R.drawable.sconto40, "Ananas tropicale");
+                createCard(view, R.drawable.carrefour, R.drawable.cereali, "Cereali Cheerios", R.string.prezzoCereali, "€1.79", R.drawable.sconto40, R.string.descrizioneCereali);
                 break;
 
             case R.id.fagioli_offerte:
-                createCard(view, R.drawable.elite, R.drawable.fagioli, "Fagioli in scatola", R.string.prezzoFagioli, "€0.66", R.drawable.sconto33, "Ananas tropicale");
+                createCard(view, R.drawable.elite, R.drawable.fagioli, "Fagioli in scatola", R.string.prezzoFagioli, "€0.66", R.drawable.sconto33,  R.string.descrizioneFagioli);
                 break;
 
             case R.id.melanzana_offerte:
-                createCard(view, R.drawable.conad, R.drawable.melanzana, "Melanzana ovale nera", R.string.prezzoMelanzana, "€0.89/Kg", R.drawable.sconto10, "Ananas tropicale");
+                createCard(view, R.drawable.conad, R.drawable.melanzana, "Melanzana ovale nera", R.string.prezzoMelanzana, "€0.89/Kg", R.drawable.sconto10, R.string.descrizioneMelanzana);
                 break;
 
             case R.id.vino_offerte:
-                createCard(view, R.drawable.carrefour, R.drawable.vino, "Vino rosso Chianti D.O.P.", R.string.prezzoVino, "€3.99", R.drawable.sconto50, "Ananas tropicale");
+                createCard(view, R.drawable.carrefour, R.drawable.vino, "Vino rosso Chianti D.O.P.", R.string.prezzoVino, "€3.99", R.drawable.sconto50, R.string.descrizioneVino);
                 break;
 
 
@@ -124,7 +124,7 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
 
 
 
-    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, String descr)
+    public void createCard(View view, int imgSup, int imgProd, String titPro, int prezzoOld,String prezzoNew, int sconto, int descr)
     {
         Intent intent = new Intent(view.getContext(), ProdottoGenerico.class);
         intent.putExtra("Supermercato", imgSup);
