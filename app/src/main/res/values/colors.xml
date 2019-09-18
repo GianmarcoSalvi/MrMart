@@ -7,5 +7,7 @@
     <color name ="myGrey"> #d6d6d6 </color>
     <color name ="myYellow"> #ffe400 </color>
     <color name ="myWhite"> #ffffff </color>
+    <color name="myWhiteTransparent"> #ccffffff</color>
     <color name ="myTransparent"> #00ff0000 </color>
+
 </resources>

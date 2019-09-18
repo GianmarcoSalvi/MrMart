@@ -80,7 +80,7 @@ public class OfferteFragment extends Fragment implements View.OnClickListener{
 
         //searchview
         mSearchView = root.findViewById(R.id.search_view);
-        mSearchView.setQueryHint("Cerca prodotto");
+        mSearchView.setQueryHint("Cerca offerta");
 
         return root;
     }
